@@ -21,6 +21,13 @@ print("TensorFlow version:", tf.__version__)
 os.makedirs("data", exist_ok=True)
 os.makedirs("models", exist_ok=True)
 
+# Metal/GPU Setup for Mac
+if tf.config.list_physical_devices('GPU'):
+    print("GPU (MPS/Metal) detected.")
+else:
+    print("Warning: No GPU detected, training on CPU.")
+
+
 # =====================================================
 # 1. LOAD DATA
 # =====================================================
@@ -33,9 +40,9 @@ print(f"\nLoaded {len(df)} samples")
 print(f"Unique NIC codes : {df['nic_code'].nunique()}")
 print(f"Unique divisions : {df['division'].nunique()} → {sorted(df['division'].unique())}")
 
-texts     = df["text"].astype(str).values
-nic_codes = df["nic_code"].astype(str).values
-divisions = df["division"].astype(str).values
+texts     = df["text"].astype(str).values.astype("U")   # Unicode string dtype
+nic_codes = df["nic_code"].astype(str).values.astype("U")
+divisions = df["division"].astype(str).values.astype("U")
 
 # =====================================================
 # 2. ENCODE LABELS
@@ -83,6 +90,13 @@ X_train, X_test, yn_train, yn_test, yd_train, yd_test = train_test_split(
     texts, y_nic, y_div, test_size=0.15, random_state=42, stratify=y_nic
 )
 
+# Convert to categorical for label smoothing support
+yn_train = tf.keras.utils.to_categorical(yn_train, num_nic)
+yn_test  = tf.keras.utils.to_categorical(yn_test, num_nic)
+yd_train = tf.keras.utils.to_categorical(yd_train, num_div)
+yd_test  = tf.keras.utils.to_categorical(yd_test, num_div)
+
+
 print(f"\nTrain: {len(X_train)} | Test: {len(X_test)}")
 
 # =====================================================
@@ -99,6 +113,10 @@ vectorizer = tf.keras.layers.TextVectorization(
     standardize="lower_and_strip_punctuation",
     name="text_vectorizer",
 )
+
+X_train = np.array(X_train, dtype=str)
+X_test  = np.array(X_test, dtype=str)
+
 vectorizer.adapt(X_train)
 
 X_train_vec = vectorizer(X_train)
@@ -199,8 +217,8 @@ model = build_model(
 model.compile(
     optimizer=tf.keras.optimizers.Adam(learning_rate=5e-4),
     loss={
-        "nic_out": tf.keras.losses.SparseCategoricalCrossentropy(label_smoothing=0.05),
-        "div_out": tf.keras.losses.SparseCategoricalCrossentropy(label_smoothing=0.05),
+        "nic_out": tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.05),
+        "div_out": tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.05),
     },
     loss_weights={"nic_out": 0.85, "div_out": 0.15},
     metrics={"nic_out": "accuracy", "div_out": "accuracy"},

@@ -1020,7 +1020,20 @@ PREFIXES = [
     "we are manufacturers of ",
     "i sell ",
     "we provide ",
-
+    "Growing",
+    "selling",
+    "manufacturing",
+    "trading",
+    "service",
+    "repairing",
+    "providing",
+    "making",
+    "selling",
+    "trading",
+    "service",
+    "repairing",
+    "providing",
+    "making",
 ]
 
 SUFFIXES = [
