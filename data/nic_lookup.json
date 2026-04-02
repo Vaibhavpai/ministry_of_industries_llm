@@ -1,0 +1,850 @@
+{
+  "1111": {
+    "label": "Growing of wheat",
+    "division": "Agriculture"
+  },
+  "1121": {
+    "label": "Organic farming of basmati rice",
+    "division": "Agriculture"
+  },
+  "1122": {
+    "label": "Organic farming of non-basmati rice",
+    "division": "Agriculture"
+  },
+  "1131": {
+    "label": "Growing of vegetables",
+    "division": "Agriculture"
+  },
+  "1132": {
+    "label": "Growing of fruit-bearing vegetables",
+    "division": "Agriculture"
+  },
+  "1133": {
+    "label": "Growing of onion",
+    "division": "Agriculture"
+  },
+  "1135": {
+    "label": "Growing of potatoes and tubers",
+    "division": "Agriculture"
+  },
+  "1140": {
+    "label": "Growing of sugar cane",
+    "division": "Agriculture"
+  },
+  "1161": {
+    "label": "Growing of cotton",
+    "division": "Agriculture"
+  },
+  "1162": {
+    "label": "Growing of jute",
+    "division": "Agriculture"
+  },
+  "1221": {
+    "label": "Growing of mangoes",
+    "division": "Agriculture"
+  },
+  "1222": {
+    "label": "Growing of bananas",
+    "division": "Agriculture"
+  },
+  "1261": {
+    "label": "Growing of coconut",
+    "division": "Agriculture"
+  },
+  "1271": {
+    "label": "Growing of tea",
+    "division": "Agriculture"
+  },
+  "1272": {
+    "label": "Growing of coffee",
+    "division": "Agriculture"
+  },
+  "1281": {
+    "label": "Growing of ginger",
+    "division": "Agriculture"
+  },
+  "1282": {
+    "label": "Growing of chili",
+    "division": "Agriculture"
+  },
+  "1284": {
+    "label": "Growing of spices",
+    "division": "Agriculture"
+  },
+  "1492": {
+    "label": "Bee-keeping and production of honey",
+    "division": "Agriculture"
+  },
+  "1461": {
+    "label": "Raising and breeding of poultry",
+    "division": "Agriculture"
+  },
+  "1462": {
+    "label": "Production of eggs",
+    "division": "Agriculture"
+  },
+  "1412": {
+    "label": "Production of milk from cows or buffaloes",
+    "division": "Agriculture"
+  },
+  "1441": {
+    "label": "Raising and breeding of sheep and goats",
+    "division": "Agriculture"
+  },
+  "3221": {
+    "label": "Fish farming in freshwater",
+    "division": "Agriculture"
+  },
+  "3111": {
+    "label": "Fishing in ocean and coastal waters",
+    "division": "Agriculture"
+  },
+  "5101": {
+    "label": "Opencast mining of hard coal",
+    "division": "Mining"
+  },
+  "7100": {
+    "label": "Mining of iron ores",
+    "division": "Mining"
+  },
+  "8102": {
+    "label": "Quarrying of granite",
+    "division": "Mining"
+  },
+  "8101": {
+    "label": "Quarrying of marble",
+    "division": "Mining"
+  },
+  "8107": {
+    "label": "Mining of limestone",
+    "division": "Mining"
+  },
+  "8106": {
+    "label": "Operation of sand or gravel pits",
+    "division": "Mining"
+  },
+  "10612": {
+    "label": "Rice milling",
+    "division": "Manufacturing"
+  },
+  "10611": {
+    "label": "Flour milling",
+    "division": "Manufacturing"
+  },
+  "10613": {
+    "label": "Dal (pulses) milling",
+    "division": "Manufacturing"
+  },
+  "10712": {
+    "label": "Manufacture of biscuits and cakes",
+    "division": "Manufacturing"
+  },
+  "10711": {
+    "label": "Manufacture of bread",
+    "division": "Manufacturing"
+  },
+  "10721": {
+    "label": "Manufacture of sugar from sugarcane",
+    "division": "Manufacturing"
+  },
+  "10722": {
+    "label": "Manufacture of gur from sugarcane",
+    "division": "Manufacturing"
+  },
+  "10732": {
+    "label": "Manufacture of chocolate",
+    "division": "Manufacturing"
+  },
+  "10734": {
+    "label": "Manufacture of sweetmeats",
+    "division": "Manufacturing"
+  },
+  "10740": {
+    "label": "Manufacture of macaroni and noodles",
+    "division": "Manufacturing"
+  },
+  "10796": {
+    "label": "Manufacture of papads and appalam",
+    "division": "Manufacturing"
+  },
+  "10791": {
+    "label": "Processing and blending of tea",
+    "division": "Manufacturing"
+  },
+  "10795": {
+    "label": "Grinding and processing of spices",
+    "division": "Manufacturing"
+  },
+  "10504": {
+    "label": "Manufacture of cream butter cheese ghee",
+    "division": "Manufacturing"
+  },
+  "10502": {
+    "label": "Manufacture of milk powder",
+    "division": "Manufacturing"
+  },
+  "10505": {
+    "label": "Manufacture of ice cream",
+    "division": "Manufacturing"
+  },
+  "10204": {
+    "label": "Processing and preserving of fish",
+    "division": "Manufacturing"
+  },
+  "10201": {
+    "label": "Sun-drying of fish",
+    "division": "Manufacturing"
+  },
+  "10306": {
+    "label": "Manufacture of pickles and chutney",
+    "division": "Manufacturing"
+  },
+  "10304": {
+    "label": "Manufacture of fruit juices",
+    "division": "Manufacturing"
+  },
+  "10305": {
+    "label": "Manufacture of sauces jams and jellies",
+    "division": "Manufacturing"
+  },
+  "10801": {
+    "label": "Manufacture of cattle feed",
+    "division": "Manufacturing"
+  },
+  "11041": {
+    "label": "Manufacture of aerated drinks",
+    "division": "Manufacturing"
+  },
+  "11045": {
+    "label": "Manufacture of soft drinks",
+    "division": "Manufacturing"
+  },
+  "11043": {
+    "label": "Manufacture of mineral water",
+    "division": "Manufacturing"
+  },
+  "13111": {
+    "label": "Preparation and spinning of cotton fiber",
+    "division": "Manufacturing"
+  },
+  "13122": {
+    "label": "Weaving of silk fabrics",
+    "division": "Manufacturing"
+  },
+  "13121": {
+    "label": "Weaving of cotton fabrics",
+    "division": "Manufacturing"
+  },
+  "14101": {
+    "label": "Manufacture of textile garments",
+    "division": "Manufacturing"
+  },
+  "14105": {
+    "label": "Custom tailoring",
+    "division": "Manufacturing"
+  },
+  "13991": {
+    "label": "Embroidery work and making of laces",
+    "division": "Manufacturing"
+  },
+  "13992": {
+    "label": "Zari work and ornamental trimmings",
+    "division": "Manufacturing"
+  },
+  "13942": {
+    "label": "Manufacture of cordage or rope of jute",
+    "division": "Manufacturing"
+  },
+  "13931": {
+    "label": "Manufacture of carpets of cotton",
+    "division": "Manufacturing"
+  },
+  "13913": {
+    "label": "Manufacture of knitted synthetic fabrics",
+    "division": "Manufacturing"
+  },
+  "15121": {
+    "label": "Manufacture of travel goods and bags",
+    "division": "Manufacturing"
+  },
+  "15201": {
+    "label": "Manufacture of leather footwear",
+    "division": "Manufacturing"
+  },
+  "31001": {
+    "label": "Manufacture of furniture of wood",
+    "division": "Manufacturing"
+  },
+  "16211": {
+    "label": "Manufacture of plywood and veneer",
+    "division": "Manufacturing"
+  },
+  "17023": {
+    "label": "Manufacture of card board boxes",
+    "division": "Manufacturing"
+  },
+  "17024": {
+    "label": "Manufacture of sacks and bags of paper",
+    "division": "Manufacturing"
+  },
+  "20231": {
+    "label": "Manufacture of soap all forms",
+    "division": "Manufacturing"
+  },
+  "20233": {
+    "label": "Manufacture of detergent",
+    "division": "Manufacturing"
+  },
+  "20221": {
+    "label": "Manufacture of paints and varnishes",
+    "division": "Manufacturing"
+  },
+  "20121": {
+    "label": "Manufacture of urea and organic fertilizers",
+    "division": "Manufacturing"
+  },
+  "20238": {
+    "label": "Manufacture of agarbatti and similar products",
+    "division": "Manufacturing"
+  },
+  "20212": {
+    "label": "Manufacture of disinfectants",
+    "division": "Manufacturing"
+  },
+  "20236": {
+    "label": "Manufacture of hair oil and shampoo",
+    "division": "Manufacturing"
+  },
+  "20237": {
+    "label": "Manufacture of cosmetics and toileteries",
+    "division": "Manufacturing"
+  },
+  "20234": {
+    "label": "Manufacture of perfumes",
+    "division": "Manufacturing"
+  },
+  "20235": {
+    "label": "Manufacture of dental hygiene preparations",
+    "division": "Manufacturing"
+  },
+  "20291": {
+    "label": "Manufacture of matches",
+    "division": "Manufacturing"
+  },
+  "21002": {
+    "label": "Manufacture of allopathic pharmaceutical preparations",
+    "division": "Manufacturing"
+  },
+  "21003": {
+    "label": "Manufacture of ayurvedic pharmaceutical preparations",
+    "division": "Manufacturing"
+  },
+  "21004": {
+    "label": "Manufacture of homoeopathic pharmaceutical preparations",
+    "division": "Manufacturing"
+  },
+  "21006": {
+    "label": "Manufacture of medical wadding gauze bandages",
+    "division": "Manufacturing"
+  },
+  "22201": {
+    "label": "Manufacture of semi-finished plastic products",
+    "division": "Manufacturing"
+  },
+  "22203": {
+    "label": "Manufacture of plastic articles for packing",
+    "division": "Manufacturing"
+  },
+  "22202": {
+    "label": "Manufacture of plastic household articles",
+    "division": "Manufacturing"
+  },
+  "22191": {
+    "label": "Manufacture of rubber plates and tubes",
+    "division": "Manufacturing"
+  },
+  "22111": {
+    "label": "Manufacture of rubber tyres for motor vehicles",
+    "division": "Manufacturing"
+  },
+  "23106": {
+    "label": "Manufacture of glass bangles",
+    "division": "Manufacturing"
+  },
+  "23931": {
+    "label": "Manufacture of articles of porcelain and pottery",
+    "division": "Manufacturing"
+  },
+  "23921": {
+    "label": "Manufacture of bricks",
+    "division": "Manufacturing"
+  },
+  "23941": {
+    "label": "Manufacture of clinkers and cement",
+    "division": "Manufacturing"
+  },
+  "24103": {
+    "label": "Manufacture of steel",
+    "division": "Manufacturing"
+  },
+  "24101": {
+    "label": "Manufacture of pig iron",
+    "division": "Manufacturing"
+  },
+  "24202": {
+    "label": "Manufacture of aluminium products",
+    "division": "Manufacturing"
+  },
+  "24201": {
+    "label": "Manufacture of copper products",
+    "division": "Manufacturing"
+  },
+  "25994": {
+    "label": "Manufacture of metal household articles",
+    "division": "Manufacturing"
+  },
+  "25934": {
+    "label": "Manufacture of padlocks and locks",
+    "division": "Manufacturing"
+  },
+  "25993": {
+    "label": "Manufacture of metal cable and wire",
+    "division": "Manufacturing"
+  },
+  "25991": {
+    "label": "Manufacture of metal fasteners",
+    "division": "Manufacturing"
+  },
+  "25931": {
+    "label": "Manufacture of cutlery",
+    "division": "Manufacturing"
+  },
+  "25992": {
+    "label": "Manufacture of containers tins and cans",
+    "division": "Manufacturing"
+  },
+  "26305": {
+    "label": "Manufacture of pagers cellular phones",
+    "division": "Manufacturing"
+  },
+  "27400": {
+    "label": "Manufacture of electric lighting equipment",
+    "division": "Manufacturing"
+  },
+  "27503": {
+    "label": "Manufacture of electric fans",
+    "division": "Manufacturing"
+  },
+  "27320": {
+    "label": "Manufacture of wires and cables",
+    "division": "Manufacturing"
+  },
+  "27331": {
+    "label": "Manufacture of switch and socket",
+    "division": "Manufacturing"
+  },
+  "27201": {
+    "label": "Manufacture of primary cells and batteries",
+    "division": "Manufacturing"
+  },
+  "26201": {
+    "label": "Manufacture of desktop and laptop computers",
+    "division": "Manufacturing"
+  },
+  "26101": {
+    "label": "Manufacture of electronic components",
+    "division": "Manufacturing"
+  },
+  "29301": {
+    "label": "Manufacture of motor vehicle parts",
+    "division": "Manufacturing"
+  },
+  "30911": {
+    "label": "Manufacture of motorcycles and scooters",
+    "division": "Manufacturing"
+  },
+  "28211": {
+    "label": "Manufacture of tractors for agriculture",
+    "division": "Manufacturing"
+  },
+  "30921": {
+    "label": "Manufacture of bicycles",
+    "division": "Manufacturing"
+  },
+  "18112": {
+    "label": "Printing of books and magazines",
+    "division": "Manufacturing"
+  },
+  "18119": {
+    "label": "Printing activities",
+    "division": "Manufacturing"
+  },
+  "32111": {
+    "label": "Manufacture of jewellery of gold silver",
+    "division": "Manufacturing"
+  },
+  "32120": {
+    "label": "Manufacture of imitation jewellery",
+    "division": "Manufacturing"
+  },
+  "32112": {
+    "label": "Working of diamonds and precious stones",
+    "division": "Manufacturing"
+  },
+  "32401": {
+    "label": "Manufacture of dolls and toy animals",
+    "division": "Manufacturing"
+  },
+  "32300": {
+    "label": "Manufacture of sports goods",
+    "division": "Manufacturing"
+  },
+  "32504": {
+    "label": "Manufacture of medical instruments",
+    "division": "Manufacturing"
+  },
+  "41001": {
+    "label": "Construction of buildings",
+    "division": "Construction"
+  },
+  "42101": {
+    "label": "Construction of highways and roads",
+    "division": "Construction"
+  },
+  "43211": {
+    "label": "Installation of electrical wiring",
+    "division": "Construction"
+  },
+  "43221": {
+    "label": "Installation of plumbing",
+    "division": "Construction"
+  },
+  "43303": {
+    "label": "Interior painting and decorating",
+    "division": "Construction"
+  },
+  "47211": {
+    "label": "Retail sale of cereals and pulses",
+    "division": "Trade"
+  },
+  "47190": {
+    "label": "Other retail sale in non-specialized stores",
+    "division": "Trade"
+  },
+  "47414": {
+    "label": "Retail sale of telecommunication equipment",
+    "division": "Trade"
+  },
+  "47420": {
+    "label": "Retail sale of audio and video equipment",
+    "division": "Trade"
+  },
+  "47711": {
+    "label": "Retail sale of readymade garments",
+    "division": "Trade"
+  },
+  "47721": {
+    "label": "Retail sale of pharmaceuticals",
+    "division": "Trade"
+  },
+  "47733": {
+    "label": "Retail sale of jewellery",
+    "division": "Trade"
+  },
+  "47300": {
+    "label": "Retail sale of automotive fuel",
+    "division": "Trade"
+  },
+  "47613": {
+    "label": "Retail sale of stationery",
+    "division": "Trade"
+  },
+  "47522": {
+    "label": "Retail sale of hardware",
+    "division": "Trade"
+  },
+  "47212": {
+    "label": "Retail sale of fresh fruit and vegetables",
+    "division": "Trade"
+  },
+  "47591": {
+    "label": "Retail sale of household furniture",
+    "division": "Trade"
+  },
+  "47912": {
+    "label": "Retail sale via e-commerce",
+    "division": "Trade"
+  },
+  "45200": {
+    "label": "Maintenance and repair of motor vehicles",
+    "division": "Trade"
+  },
+  "45403": {
+    "label": "Maintenance of motorcycles and scooters",
+    "division": "Trade"
+  },
+  "49231": {
+    "label": "Motorised road freight transport",
+    "division": "Transport"
+  },
+  "49224": {
+    "label": "Taxi operation",
+    "division": "Transport"
+  },
+  "49221": {
+    "label": "Long distance bus services",
+    "division": "Transport"
+  },
+  "53200": {
+    "label": "Courier activities",
+    "division": "Transport"
+  },
+  "52101": {
+    "label": "Warehousing of refrigerated goods",
+    "division": "Transport"
+  },
+  "52102": {
+    "label": "Warehousing non-refrigerated",
+    "division": "Transport"
+  },
+  "52291": {
+    "label": "Activities of travel agents",
+    "division": "Transport"
+  },
+  "55101": {
+    "label": "Hotels and motels providing lodging",
+    "division": "Hospitality"
+  },
+  "56101": {
+    "label": "Restaurants",
+    "division": "Hospitality"
+  },
+  "56291": {
+    "label": "Activities of food service contractors",
+    "division": "Hospitality"
+  },
+  "56292": {
+    "label": "Operation of canteens",
+    "division": "Hospitality"
+  },
+  "56303": {
+    "label": "Fruit juice bars",
+    "division": "Hospitality"
+  },
+  "56302": {
+    "label": "Tea and coffee shops",
+    "division": "Hospitality"
+  },
+  "56102": {
+    "label": "Cafeterias and fast food restaurants",
+    "division": "Hospitality"
+  },
+  "56210": {
+    "label": "Event catering",
+    "division": "Hospitality"
+  },
+  "62011": {
+    "label": "Writing computer programs",
+    "division": "IT Services"
+  },
+  "62012": {
+    "label": "Web page designing",
+    "division": "IT Services"
+  },
+  "62020": {
+    "label": "Computer consultancy",
+    "division": "IT Services"
+  },
+  "63114": {
+    "label": "Providing data entry services",
+    "division": "IT Services"
+  },
+  "63992": {
+    "label": "Activities of cyber cafe",
+    "division": "IT Services"
+  },
+  "82200": {
+    "label": "Activities of call centres",
+    "division": "IT Services"
+  },
+  "61104": {
+    "label": "Activities providing internet access",
+    "division": "IT Services"
+  },
+  "61103": {
+    "label": "Activities of cable operators",
+    "division": "IT Services"
+  },
+  "64920": {
+    "label": "Other credit granting",
+    "division": "Finance"
+  },
+  "64910": {
+    "label": "Financial leasing",
+    "division": "Finance"
+  },
+  "66220": {
+    "label": "Activities of insurance agents and brokers",
+    "division": "Finance"
+  },
+  "66120": {
+    "label": "Security and commodity contracts brokerage",
+    "division": "Finance"
+  },
+  "69202": {
+    "label": "Tax consultancy",
+    "division": "Finance"
+  },
+  "69201": {
+    "label": "Accounting and auditing activities",
+    "division": "Finance"
+  },
+  "68200": {
+    "label": "Real estate activities on fee basis",
+    "division": "Real Estate"
+  },
+  "69100": {
+    "label": "Legal activities",
+    "division": "Professional"
+  },
+  "71100": {
+    "label": "Architectural and engineering activities",
+    "division": "Professional"
+  },
+  "73100": {
+    "label": "Advertising",
+    "division": "Professional"
+  },
+  "74201": {
+    "label": "Commercial photograph production",
+    "division": "Professional"
+  },
+  "74103": {
+    "label": "Services of graphic designers",
+    "division": "Professional"
+  },
+  "74101": {
+    "label": "Fashion design",
+    "division": "Professional"
+  },
+  "75000": {
+    "label": "Veterinary activities",
+    "division": "Professional"
+  },
+  "85491": {
+    "label": "Academic tutoring services",
+    "division": "Education"
+  },
+  "85211": {
+    "label": "General school education first stage",
+    "division": "Education"
+  },
+  "85301": {
+    "label": "Higher education",
+    "division": "Education"
+  },
+  "85221": {
+    "label": "Technical and vocational education",
+    "division": "Education"
+  },
+  "85223": {
+    "label": "Professional motor driving school",
+    "division": "Education"
+  },
+  "85420": {
+    "label": "Cultural education",
+    "division": "Education"
+  },
+  "86100": {
+    "label": "Hospital activities",
+    "division": "Healthcare"
+  },
+  "86201": {
+    "label": "Medical practice activities",
+    "division": "Healthcare"
+  },
+  "86202": {
+    "label": "Dental practice activities",
+    "division": "Healthcare"
+  },
+  "86901": {
+    "label": "Activities of Ayurveda practitioners",
+    "division": "Healthcare"
+  },
+  "86903": {
+    "label": "Activities of homeopaths",
+    "division": "Healthcare"
+  },
+  "86905": {
+    "label": "Activities of diagnostic laboratories",
+    "division": "Healthcare"
+  },
+  "96020": {
+    "label": "Hairdressing and other beauty treatment",
+    "division": "Services"
+  },
+  "96010": {
+    "label": "Washing and dry cleaning of textiles",
+    "division": "Services"
+  },
+  "95210": {
+    "label": "Repair of consumer electronics",
+    "division": "Services"
+  },
+  "95120": {
+    "label": "Repair of communication equipment",
+    "division": "Services"
+  },
+  "95291": {
+    "label": "Repair of bicycles",
+    "division": "Services"
+  },
+  "95230": {
+    "label": "Repair of footwear and leather goods",
+    "division": "Services"
+  },
+  "81299": {
+    "label": "Other building and industrial cleaning",
+    "division": "Services"
+  },
+  "80100": {
+    "label": "Private security activities",
+    "division": "Services"
+  },
+  "81210": {
+    "label": "General cleaning of buildings",
+    "division": "Services"
+  },
+  "82300": {
+    "label": "Organization of conventions and trade shows",
+    "division": "Services"
+  },
+  "78100": {
+    "label": "Activities of employment placement agencies",
+    "division": "Services"
+  },
+  "82191": {
+    "label": "Photocopying and duplicating services",
+    "division": "Services"
+  },
+  "33121": {
+    "label": "Repair of engines and turbines",
+    "division": "Manufacturing"
+  },
+  "35105": {
+    "label": "Electric power generation using solar energy",
+    "division": "Energy"
+  },
+  "35106": {
+    "label": "Electric power generation non conventional",
+    "division": "Energy"
+  },
+  "35109": {
+    "label": "Collection and distribution of electric energy",
+    "division": "Energy"
+  },
+  "35202": {
+    "label": "Distribution and sale of gaseous fuels",
+    "division": "Energy"
+  }
+}

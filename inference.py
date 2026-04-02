@@ -7,7 +7,7 @@ Fixes:
   3. Clarification is keyword-based, not another model call (zero token waste)
   4. Clean report display
 """
-
+from ambiguous_patterns import AMBIGUOUS_PATTERNS, CONFIDENCE_THRESHOLD
 import tensorflow as tf
 import numpy as np
 import json
@@ -160,31 +160,6 @@ UDYAM_GUIDANCE = {
 
 # When confidence is low, ask ONE question to disambiguate
 # Maps ambiguous keywords → clarifying question + refinement hints
-AMBIGUOUS_PATTERNS = [
-    {
-        "keywords": ["repair", "fix", "service", "maintain"],
-        "question": "Do you repair vehicles/bikes or electronic items or other equipment?",
-        "options":  ["vehicles/bikes", "electronics/mobiles", "machinery/equipment"],
-    },
-    {
-        "keywords": ["sell", "shop", "store", "dukan", "retail"],
-        "question": "What do you mainly sell? (e.g. food, clothes, medicine, electronics, hardware)",
-        "options":  [],
-    },
-    {
-        "keywords": ["make", "manufacture", "produce", "banane"],
-        "question": "What exactly do you make? Please name the product (e.g. soap, bags, furniture)",
-        "options":  [],
-    },
-    {
-        "keywords": ["farm", "grow", "cultivate", "kheti"],
-        "question": "What crop or animal do you work with?",
-        "options":  [],
-    },
-]
-
-CONFIDENCE_THRESHOLD = 0.45  # below this → ask clarification
-
 
 def needs_clarification(text: str, confidence: float) -> dict | None:
     """Returns clarification question dict if needed, else None."""
