@@ -19,7 +19,7 @@
                 </svg>
                 <div class="header-titles">
                     <h1>Udyam Predictor</h1>
-                    <p>AI-powered NIC classification for Indian businesses</p>
+                    <p>AI-powered NIC · ISIC · NAICS classification for Indian businesses</p>
                 </div>
             </div>
         </header>
@@ -28,7 +28,7 @@
         <main class="chat-container" id="chatContainer">
             <div class="message system-message">
                 <div class="message-content">
-                    <p>Hello! 👋 I'm your AI assistant for business classification. Describe your business, and I'll find the correct NIC code and relevant government schemes for you.</p>
+                    <p>Hello! 👋 I'm your AI assistant for business classification. Describe your business, and I'll find the correct <strong>NIC</strong>, <strong>ISIC</strong>, and <strong>NAICS</strong> codes along with relevant government schemes.</p>
                 </div>
             </div>
         </main>
@@ -52,16 +52,39 @@
     <!-- RESULT CARD TEMPLATE -->
     <template id="resultCardTemplate">
         <div class="result-card fade-in">
-            <!-- Header: NIC and Sector -->
+            <!-- Code Badges Row -->
             <div class="result-header">
-                <div class="nic-badge">
-                    <span class="nic-code"></span>
+                <div class="code-badges">
+                    <div class="code-badge nic-badge-style">
+                        <span class="code-system">NIC</span>
+                        <span class="nic-code"></span>
+                    </div>
+                    <div class="code-badge isic-badge-style">
+                        <span class="code-system">ISIC</span>
+                        <span class="isic-code"></span>
+                    </div>
+                    <div class="code-badge naics-badge-style">
+                        <span class="code-system">NAICS</span>
+                        <span class="naics-code"></span>
+                    </div>
                 </div>
                 <div class="sector-label"></div>
             </div>
             
             <div class="result-body">
                 <h3 class="activity-label"></h3>
+
+                <!-- ISIC/NAICS descriptions -->
+                <div class="code-descriptions">
+                    <div class="code-desc-item">
+                        <span class="code-desc-tag">ISIC</span>
+                        <span class="isic-label"></span>
+                    </div>
+                    <div class="code-desc-item">
+                        <span class="code-desc-tag naics-desc-tag">NAICS</span>
+                        <span class="naics-label"></span>
+                    </div>
+                </div>
                 
                 <!-- Confidence Bar -->
                 <div class="confidence-section">
@@ -127,7 +150,6 @@
         <div class="options-container fade-in">
             <p class="clarification-question"></p>
             <div class="buttons-grid">
-                <!-- Buttons will be injected here -->
             </div>
         </div>
     </template>

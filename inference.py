@@ -1,11 +1,7 @@
 """
-Udyam NIC Code Predictor — Inference v2
-=========================================
-Fixes:
-  1. Division lookup uses NORMALIZED keys matching dataset
-  2. Confidence threshold → asks ONE clarifying question if unsure
-  3. Clarification is keyword-based, not another model call (zero token waste)
-  4. Clean report display
+Udyam Multi-Code Predictor — Inference v3
+===========================================
+Handles 4-output model: NIC, Division, ISIC, NAICS
 """
 from ambiguous_patterns import AMBIGUOUS_PATTERNS, CONFIDENCE_THRESHOLD
 import tensorflow as tf
@@ -158,9 +154,6 @@ UDYAM_GUIDANCE = {
 # 3. CLARIFICATION — keyword-based, zero model cost
 # =====================================================
 
-# When confidence is low, ask ONE question to disambiguate
-# Maps ambiguous keywords → clarifying question + refinement hints
-
 def needs_clarification(text: str, confidence: float) -> dict | None:
     """Returns clarification question dict if needed, else None."""
     if confidence >= CONFIDENCE_THRESHOLD:
@@ -176,7 +169,7 @@ def needs_clarification(text: str, confidence: float) -> dict | None:
 # 4. LOAD MODEL + VOCAB + LABELS
 # =====================================================
 
-print("\nLoading Udyam NIC Predictor Engine...")
+print("\nLoading Udyam Multi-Code Predictor Engine...")
 
 try:
     model = tf.keras.models.load_model("models/udyam_nic_model.keras")
@@ -184,9 +177,13 @@ try:
     with open("models/label_map.json") as f:
         label_map = json.load(f)
 
-    nic_map    = label_map["nic"]
-    div_map    = label_map["division"]
-    nic_labels = label_map["nic_labels"]
+    nic_map      = label_map["nic"]
+    div_map      = label_map["division"]
+    nic_labels   = label_map["nic_labels"]
+    isic_map     = label_map.get("isic", {})
+    naics_map    = label_map.get("naics", {})
+    isic_labels  = label_map.get("isic_labels", {})
+    naics_labels = label_map.get("naics_labels", {})
 
     with open("models/vectorizer_vocab.json") as f:
         vocab_config = json.load(f)
@@ -201,7 +198,7 @@ try:
 
 except Exception as e:
     print(f"Error loading model: {e}")
-    print("Make sure you have run: python build_dataset.py && python train_model.py first")
+    print("Make sure you have run: python build_unified_dataset.py && python train_model.py first")
     sys.exit(1)
 
 
@@ -214,9 +211,12 @@ def predict(text: str, top_k: int = 3) -> dict:
     preds = model(vec, training=False)
     preds = [p.numpy() for p in preds]
 
-    nic_probs = preds[0][0]
-    div_probs = preds[1][0]
+    nic_probs   = preds[0][0]
+    div_probs   = preds[1][0]
+    isic_probs  = preds[2][0] if len(preds) > 2 else None
+    naics_probs = preds[3][0] if len(preds) > 3 else None
 
+    # NIC predictions
     top_nic_idx = np.argsort(nic_probs)[::-1][:top_k]
     div_idx     = np.argmax(div_probs)
 
@@ -238,6 +238,28 @@ def predict(text: str, top_k: int = 3) -> dict:
         "compliance":   "GST, Shop & Establishment License",
     })
 
+    # ISIC prediction
+    isic_result = {"code": "—", "label": "—", "confidence": 0.0}
+    if isic_probs is not None and isic_map:
+        isic_idx = np.argmax(isic_probs)
+        isic_code = isic_map.get(str(isic_idx), "—")
+        isic_result = {
+            "code": isic_code,
+            "label": isic_labels.get(isic_code, "—"),
+            "confidence": float(isic_probs[isic_idx]),
+        }
+
+    # NAICS prediction
+    naics_result = {"code": "—", "label": "—", "confidence": 0.0}
+    if naics_probs is not None and naics_map:
+        naics_idx = np.argmax(naics_probs)
+        naics_code = naics_map.get(str(naics_idx), "—")
+        naics_result = {
+            "code": naics_code,
+            "label": naics_labels.get(naics_code, "—"),
+            "confidence": float(naics_probs[naics_idx]),
+        }
+
     # Generate explanation based on important keywords
     stop_words = {"this", "that", "with", "from", "business", "company", "make", "sell", "do", "we", "i", "am", "are", "is", "my", "our", "in", "on", "at", "for"}
     words = [w for w in text.lower().split() if len(w) > 2 and w not in stop_words]
@@ -248,6 +270,8 @@ def predict(text: str, top_k: int = 3) -> dict:
         "top_nics":       top_nics,
         "division":       division,
         "div_confidence": float(div_probs[div_idx]),
+        "isic":           isic_result,
+        "naics":          naics_result,
         "guidance":       guidance,
         "explanation":    explanation,
         "keywords":       detected_keywords,
@@ -265,6 +289,8 @@ def print_report(text: str, clarification_suffix: str = ""):
     div       = result["division"]
     guide     = result["guidance"]
     conf      = best["confidence"]
+    isic      = result["isic"]
+    naics     = result["naics"]
 
     print("\n" + "=" * 62)
     print(f"  Business : {text[:55]}")
@@ -273,6 +299,8 @@ def print_report(text: str, clarification_suffix: str = ""):
     print(f"  Activity    : {best['nic_label']}")
     print(f"  Sector      : {div}")
     print(f"  Confidence  : {conf * 100:.1f}%")
+    print(f"  ISIC Code   : {isic['code']} — {isic['label']}")
+    print(f"  NAICS Code  : {naics['code']} — {naics['label']}")
     print("-" * 62)
     print(f"  Register At : {guide.get('registration', '—')}")
     print(f"  Portal      : {guide.get('portal', '—')}")
@@ -316,7 +344,7 @@ if __name__ == "__main__":
     # =====================================================
 
     print("\n" + "=" * 62)
-    print("  Udyam NIC Predictor — INTERACTIVE MODE")
+    print("  Udyam Multi-Code Predictor — INTERACTIVE MODE")
     print("  Type 'exit' to quit")
     print("=" * 62)
 

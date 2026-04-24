@@ -1,0 +1,1698 @@
+{
+  "56101": {
+    "nic_label": "Restaurants",
+    "division": "Hospitality",
+    "isic_code": "I5610",
+    "isic_label": "Restaurants and mobile food service activities",
+    "naics_code": "722210",
+    "naics_label": "Limited-Service Eating Places"
+  },
+  "66220": {
+    "nic_label": "Activities of insurance agents and brokers",
+    "division": "Finance",
+    "isic_code": "K6622",
+    "isic_label": "Activities of insurance agents and brokers",
+    "naics_code": "524210",
+    "naics_label": "Insurance Agencies and Brokerages"
+  },
+  "95210": {
+    "nic_label": "Repair of consumer electronics",
+    "division": "Services",
+    "isic_code": "S9521",
+    "isic_label": "Repair of consumer electronics",
+    "naics_code": "811210",
+    "naics_label": "Electronic and Precision Equipment Repair and Maintenance"
+  },
+  "10505": {
+    "nic_label": "Manufacture of ice cream",
+    "division": "Manufacturing",
+    "isic_code": "C1050",
+    "isic_label": "Manufacture of dairy products",
+    "naics_code": "311520",
+    "naics_label": "Ice Cream and Frozen Dessert Manufacturing"
+  },
+  "45403": {
+    "nic_label": "Maintenance of motorcycles and scooters",
+    "division": "Trade",
+    "isic_code": "G4540",
+    "isic_label": "Sale, maintenance and repair of motorcycles and related parts and accessories",
+    "naics_code": "441220",
+    "naics_label": "Motorcycle, Boat and Other Motor Vehicle Dealers"
+  },
+  "69202": {
+    "nic_label": "Tax consultancy",
+    "division": "Finance",
+    "isic_code": "M6920",
+    "isic_label": "Accounting, bookkeeping and auditing activities; tax consultancy",
+    "naics_code": "541213",
+    "naics_label": "Tax Preparation Services"
+  },
+  "25931": {
+    "nic_label": "Manufacture of cutlery",
+    "division": "Manufacturing",
+    "isic_code": "C2593",
+    "isic_label": "Manufacture of cutlery, hand tools and general hardware",
+    "naics_code": "332210",
+    "naics_label": "Cutlery and Hand Tool Manufacturing"
+  },
+  "85221": {
+    "nic_label": "Technical and vocational education",
+    "division": "Education",
+    "isic_code": "P8522",
+    "isic_label": "Technical and vocational secondary education",
+    "naics_code": "611510",
+    "naics_label": "Technical and Trade Schools"
+  },
+  "29301": {
+    "nic_label": "Manufacture of motor vehicle parts",
+    "division": "Manufacturing",
+    "isic_code": "C2930",
+    "isic_label": "Manufacture of parts and accessories for motor vehicles",
+    "naics_code": "336390",
+    "naics_label": "Other Motor Vehicle Parts Manufacturing"
+  },
+  "21002": {
+    "nic_label": "Manufacture of allopathic pharmaceutical preparations",
+    "division": "Manufacturing",
+    "isic_code": "C2100",
+    "isic_label": "Manufacture of pharmaceuticals, medicinal chemical and botanical products",
+    "naics_code": "325410",
+    "naics_label": "Pharmaceutical and Medicine Manufacturing"
+  },
+  "55101": {
+    "nic_label": "Hotels and motels providing lodging",
+    "division": "Hospitality",
+    "isic_code": "I5510",
+    "isic_label": "Short term accommodation activities",
+    "naics_code": "721111",
+    "naics_label": "Hotels"
+  },
+  "1441": {
+    "nic_label": "Raising and breeding of sheep and goats",
+    "division": "Agriculture",
+    "isic_code": "A0144",
+    "isic_label": "Raising of sheep and goats",
+    "naics_code": "112410",
+    "naics_label": "Sheep Farming"
+  },
+  "47591": {
+    "nic_label": "Retail sale of household furniture",
+    "division": "Trade",
+    "isic_code": "G4759",
+    "isic_label": "Retail sale of electrical household appliances, furniture, lighting equipment and other household articles in specialized stores",
+    "naics_code": "442110",
+    "naics_label": "Furniture Stores"
+  },
+  "75000": {
+    "nic_label": "Veterinary activities",
+    "division": "Professional",
+    "isic_code": "M7500",
+    "isic_label": "Veterinary activities",
+    "naics_code": "541940",
+    "naics_label": "Veterinary Services"
+  },
+  "3221": {
+    "nic_label": "Fish farming in freshwater",
+    "division": "Agriculture",
+    "isic_code": "A0321",
+    "isic_label": "Marine aquaculture",
+    "naics_code": "112510",
+    "naics_label": "Aquaculture"
+  },
+  "47414": {
+    "nic_label": "Retail sale of telecommunication equipment",
+    "division": "Trade",
+    "isic_code": "G4741",
+    "isic_label": "Retail sale of computers, peripheral units, software and telecommunications equipment in specialized stores",
+    "naics_code": "443110",
+    "naics_label": "Appliance, Television and Other Electronics Stores"
+  },
+  "10504": {
+    "nic_label": "Manufacture of cream butter cheese ghee",
+    "division": "Manufacturing",
+    "isic_code": "C1050",
+    "isic_label": "Manufacture of dairy products",
+    "naics_code": "311515",
+    "naics_label": "Butter, Cheese, and Dry and Condensed Dairy Product Manufacturing"
+  },
+  "20291": {
+    "nic_label": "Manufacture of matches",
+    "division": "Manufacturing",
+    "isic_code": "C2029",
+    "isic_label": "Manufacture of other chemical products n.e.c.",
+    "naics_code": "325999",
+    "naics_label": "All Other Miscellaneous Chemical Product Manufacturing"
+  },
+  "85420": {
+    "nic_label": "Cultural education",
+    "division": "Education",
+    "isic_code": "P8542",
+    "isic_label": "Cultural education",
+    "naics_code": "611610",
+    "naics_label": "Fine Arts Schools"
+  },
+  "32112": {
+    "nic_label": "Working of diamonds and precious stones",
+    "division": "Manufacturing",
+    "isic_code": "C3211",
+    "isic_label": "Manufacture of jewellery and related articles",
+    "naics_code": "448310",
+    "naics_label": "Jewellery Stores"
+  },
+  "64920": {
+    "nic_label": "Other credit granting",
+    "division": "Finance",
+    "isic_code": "K6492",
+    "isic_label": "Other credit granting",
+    "naics_code": "522299",
+    "naics_label": "All Other Non-Depository Credit Intermediation"
+  },
+  "52101": {
+    "nic_label": "Warehousing of refrigerated goods",
+    "division": "Transport",
+    "isic_code": "H5210",
+    "isic_label": "Warehousing and storage",
+    "naics_code": "493120",
+    "naics_label": "Refrigerated Warehousing and Storage"
+  },
+  "1161": {
+    "nic_label": "Growing of cotton",
+    "division": "Agriculture",
+    "isic_code": "A0116",
+    "isic_label": "Growing of fibre crops",
+    "naics_code": "111920",
+    "naics_label": "Cotton Farming"
+  },
+  "1135": {
+    "nic_label": "Growing of potatoes and tubers",
+    "division": "Agriculture",
+    "isic_code": "A0113",
+    "isic_label": "Growing of vegetables and melons, roots and tubers",
+    "naics_code": "111211",
+    "naics_label": "Potato Farming"
+  },
+  "80100": {
+    "nic_label": "Private security activities",
+    "division": "Services",
+    "isic_code": "N8010",
+    "isic_label": "Private security activities",
+    "naics_code": "561612",
+    "naics_label": "Security Guard and Patrol Services"
+  },
+  "69100": {
+    "nic_label": "Legal activities",
+    "division": "Professional",
+    "isic_code": "M6910",
+    "isic_label": "Legal activities",
+    "naics_code": "541110",
+    "naics_label": "Offices of Lawyers"
+  },
+  "71100": {
+    "nic_label": "Architectural and engineering activities",
+    "division": "Professional",
+    "isic_code": "M7110",
+    "isic_label": "Architectural and engineering activities and related technical consultancy",
+    "naics_code": "541310",
+    "naics_label": "Architectural Services"
+  },
+  "1111": {
+    "nic_label": "Growing of wheat",
+    "division": "Agriculture",
+    "isic_code": "A0111",
+    "isic_label": "Growing of cereals (except rice), leguminous crops and oil seeds",
+    "naics_code": "111140",
+    "naics_label": "Wheat Farming"
+  },
+  "23106": {
+    "nic_label": "Manufacture of glass bangles",
+    "division": "Manufacturing",
+    "isic_code": "C2310",
+    "isic_label": "Manufacture of glass and glass products",
+    "naics_code": "327214",
+    "naics_label": "Glass Manufacturing"
+  },
+  "81299": {
+    "nic_label": "Other building and industrial cleaning",
+    "division": "Services",
+    "isic_code": "N8129",
+    "isic_label": "Other building and industrial cleaning activities",
+    "naics_code": "561722",
+    "naics_label": "Janitorial Services (except Window Cleaning)"
+  },
+  "96020": {
+    "nic_label": "Hairdressing and other beauty treatment",
+    "division": "Services",
+    "isic_code": "S9602",
+    "isic_label": "Hairdressing and other beauty treatment",
+    "naics_code": "812115",
+    "naics_label": "Beauty Salons"
+  },
+  "27320": {
+    "nic_label": "Manufacture of wires and cables",
+    "division": "Manufacturing",
+    "isic_code": "C2731",
+    "isic_label": "Manufacture of fibre optic cables",
+    "naics_code": "331222",
+    "naics_label": "Steel Wire Drawing"
+  },
+  "1221": {
+    "nic_label": "Growing of mangoes",
+    "division": "Agriculture",
+    "isic_code": "A0122",
+    "isic_label": "Growing of tropical and subtropical fruits",
+    "naics_code": "111330",
+    "naics_label": "Non-Citrus Fruit and Tree Nut Farming"
+  },
+  "47721": {
+    "nic_label": "Retail sale of pharmaceuticals",
+    "division": "Trade",
+    "isic_code": "G4772",
+    "isic_label": "Retail sale of pharmaceutical and medical goods, cosmetic and toilet articles in specialized stores",
+    "naics_code": "446110",
+    "naics_label": "Pharmacies and Drug Stores"
+  },
+  "10612": {
+    "nic_label": "Rice milling",
+    "division": "Manufacturing",
+    "isic_code": "C1061",
+    "isic_label": "Manufacture of grain mill products",
+    "naics_code": "311214",
+    "naics_label": "Rice Milling and Malt Manufacturing"
+  },
+  "96010": {
+    "nic_label": "Washing and dry cleaning of textiles",
+    "division": "Services",
+    "isic_code": "S9601",
+    "isic_label": "Washing and (dry-) cleaning of textile and fur products",
+    "naics_code": "812320",
+    "naics_label": "Dry Cleaning and Laundry Services (except Coin-Operated)"
+  },
+  "10611": {
+    "nic_label": "Flour milling",
+    "division": "Manufacturing",
+    "isic_code": "C1061",
+    "isic_label": "Manufacture of grain mill products",
+    "naics_code": "311211",
+    "naics_label": "Flour Milling"
+  },
+  "43211": {
+    "nic_label": "Installation of electrical wiring",
+    "division": "Construction",
+    "isic_code": "F4321",
+    "isic_label": "Electrical installation",
+    "naics_code": "238210",
+    "naics_label": "Electrical Contractors and Other Wiring Installation Contractors"
+  },
+  "8102": {
+    "nic_label": "Quarrying of granite",
+    "division": "Mining",
+    "isic_code": "B0810",
+    "isic_label": "Quarrying of stone, sand and clay",
+    "naics_code": "212316",
+    "naics_label": "Marble Mining and Quarrying"
+  },
+  "62012": {
+    "nic_label": "Web page designing",
+    "division": "IT Services",
+    "isic_code": "J6201",
+    "isic_label": "Computer programming activities",
+    "naics_code": "541510",
+    "naics_label": "Computer Systems Design and Related Services"
+  },
+  "26305": {
+    "nic_label": "Manufacture of pagers cellular phones",
+    "division": "Manufacturing",
+    "isic_code": "C2630",
+    "isic_label": "Manufacture of communication equipment",
+    "naics_code": "334210",
+    "naics_label": "Telephone Apparatus Manufacturing"
+  },
+  "32111": {
+    "nic_label": "Manufacture of jewellery of gold silver",
+    "division": "Manufacturing",
+    "isic_code": "C3211",
+    "isic_label": "Manufacture of jewellery and related articles",
+    "naics_code": "448310",
+    "naics_label": "Jewellery Stores"
+  },
+  "15121": {
+    "nic_label": "Manufacture of travel goods and bags",
+    "division": "Manufacturing",
+    "isic_code": "C1512",
+    "isic_label": "Manufacture of luggage, handbags and the like, saddlery and harness",
+    "naics_code": "316990",
+    "naics_label": "Other Leather and Allied Product Manufacturing"
+  },
+  "10795": {
+    "nic_label": "Grinding and processing of spices",
+    "division": "Manufacturing",
+    "isic_code": "C1079",
+    "isic_label": "Manufacture of other food products n.e.c,",
+    "naics_code": "311940",
+    "naics_label": "Seasoning and Dressing Manufacturing"
+  },
+  "95120": {
+    "nic_label": "Repair of communication equipment",
+    "division": "Services",
+    "isic_code": "S9512",
+    "isic_label": "Repair of communication equipment",
+    "naics_code": "811210",
+    "naics_label": "Electronic and Precision Equipment Repair and Maintenance"
+  },
+  "20236": {
+    "nic_label": "Manufacture of hair oil and shampoo",
+    "division": "Manufacturing",
+    "isic_code": "C2023",
+    "isic_label": "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations",
+    "naics_code": "325620",
+    "naics_label": "Toilet Preparation Manufacturing"
+  },
+  "31001": {
+    "nic_label": "Manufacture of furniture of wood",
+    "division": "Manufacturing",
+    "isic_code": "C3100",
+    "isic_label": "Manufacture of furniture",
+    "naics_code": "337110",
+    "naics_label": "Wood Kitchen Cabinet and Counter Top Manufacturing"
+  },
+  "14105": {
+    "nic_label": "Custom tailoring",
+    "division": "Manufacturing",
+    "isic_code": "C1410",
+    "isic_label": "Manufacture of wearing apparel, except fur apparel",
+    "naics_code": "315190",
+    "naics_label": "Other Clothing Knitting Mills"
+  },
+  "56292": {
+    "nic_label": "Operation of canteens",
+    "division": "Hospitality",
+    "isic_code": "I5629",
+    "isic_label": "Other food service activities",
+    "naics_code": "722310",
+    "naics_label": "Food Service Contractors"
+  },
+  "20231": {
+    "nic_label": "Manufacture of soap all forms",
+    "division": "Manufacturing",
+    "isic_code": "C2023",
+    "isic_label": "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations",
+    "naics_code": "325610",
+    "naics_label": "Soap and Cleaning Compound Manufacturing"
+  },
+  "14101": {
+    "nic_label": "Manufacture of textile garments",
+    "division": "Manufacturing",
+    "isic_code": "C1410",
+    "isic_label": "Manufacture of wearing apparel, except fur apparel",
+    "naics_code": "315190",
+    "naics_label": "Other Clothing Knitting Mills"
+  },
+  "10722": {
+    "nic_label": "Manufacture of gur from sugarcane",
+    "division": "Manufacturing",
+    "isic_code": "C1072",
+    "isic_label": "Manufacture of sugar",
+    "naics_code": "311310",
+    "naics_label": "Sugar Manufacturing"
+  },
+  "1461": {
+    "nic_label": "Raising and breeding of poultry",
+    "division": "Agriculture",
+    "isic_code": "A0146",
+    "isic_label": "Raising of poultry",
+    "naics_code": "112320",
+    "naics_label": "Broiler and Other Meat-Type Chicken Production"
+  },
+  "62011": {
+    "nic_label": "Writing computer programs",
+    "division": "IT Services",
+    "isic_code": "J6201",
+    "isic_label": "Computer programming activities",
+    "naics_code": "541510",
+    "naics_label": "Computer Systems Design and Related Services"
+  },
+  "13111": {
+    "nic_label": "Preparation and spinning of cotton fiber",
+    "division": "Manufacturing",
+    "isic_code": "C1311",
+    "isic_label": "Preparation and spinning of textile fibres",
+    "naics_code": "313110",
+    "naics_label": "Fibre, Yarn and Thread Mills"
+  },
+  "21003": {
+    "nic_label": "Manufacture of ayurvedic pharmaceutical preparations",
+    "division": "Manufacturing",
+    "isic_code": "C2100",
+    "isic_label": "Manufacture of pharmaceuticals, medicinal chemical and botanical products",
+    "naics_code": "325410",
+    "naics_label": "Pharmaceutical and Medicine Manufacturing"
+  },
+  "13991": {
+    "nic_label": "Embroidery work and making of laces",
+    "division": "Manufacturing",
+    "isic_code": "C1399",
+    "isic_label": "Manufacture of other textiles n.e.c.",
+    "naics_code": "313220",
+    "naics_label": "Narrow Fabric Mills and Schiffli Machine Embroidery"
+  },
+  "1492": {
+    "nic_label": "Bee-keeping and production of honey",
+    "division": "Agriculture",
+    "isic_code": "A0149",
+    "isic_label": "Raising of other animals",
+    "naics_code": "112910",
+    "naics_label": "Apiculture"
+  },
+  "63114": {
+    "nic_label": "Providing data entry services",
+    "division": "IT Services",
+    "isic_code": "J6311",
+    "isic_label": "Data processing, hosting and related activities",
+    "naics_code": "518210",
+    "naics_label": "Data Processing, Hosting, and Related Services"
+  },
+  "47912": {
+    "nic_label": "Retail sale via e-commerce",
+    "division": "Trade",
+    "isic_code": "G4791",
+    "isic_label": "Retail sale via mail order houses or via Internet",
+    "naics_code": "454111",
+    "naics_label": "Internet Shopping"
+  },
+  "53200": {
+    "nic_label": "Courier activities",
+    "division": "Transport",
+    "isic_code": "H5320",
+    "isic_label": "Courier activities",
+    "naics_code": "492110",
+    "naics_label": "Couriers"
+  },
+  "17024": {
+    "nic_label": "Manufacture of sacks and bags of paper",
+    "division": "Manufacturing",
+    "isic_code": "C1702",
+    "isic_label": "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard",
+    "naics_code": "322220",
+    "naics_label": "Paper Bag and Coated and Treated Paper Manufacturing"
+  },
+  "1222": {
+    "nic_label": "Growing of bananas",
+    "division": "Agriculture",
+    "isic_code": "A0122",
+    "isic_label": "Growing of tropical and subtropical fruits",
+    "naics_code": "111330",
+    "naics_label": "Non-Citrus Fruit and Tree Nut Farming"
+  },
+  "82200": {
+    "nic_label": "Activities of call centres",
+    "division": "IT Services",
+    "isic_code": "N8220",
+    "isic_label": "Activities of call centres",
+    "naics_code": "561420",
+    "naics_label": "Telephone Call Centres"
+  },
+  "11041": {
+    "nic_label": "Manufacture of aerated drinks",
+    "division": "Manufacturing",
+    "isic_code": "C1104",
+    "isic_label": "Manufacture of soft drinks; production of mineral waters and other bottled waters ",
+    "naics_code": "312110",
+    "naics_label": "Soft Drink and Ice Manufacturing"
+  },
+  "86202": {
+    "nic_label": "Dental practice activities",
+    "division": "Healthcare",
+    "isic_code": "Q8620",
+    "isic_label": "Medical and dental practice activities",
+    "naics_code": "621210",
+    "naics_label": "Offices of Dentists"
+  },
+  "47212": {
+    "nic_label": "Retail sale of fresh fruit and vegetables",
+    "division": "Trade",
+    "isic_code": "G4721",
+    "isic_label": "Retail sale of food in specialized stores",
+    "naics_code": "445230",
+    "naics_label": "Fruit and Vegetable Markets"
+  },
+  "82191": {
+    "nic_label": "Photocopying and duplicating services",
+    "division": "Services",
+    "isic_code": "N8219",
+    "isic_label": "Photocopying, document preparation and other specialized office support activities",
+    "naics_code": "561430",
+    "naics_label": "Business Service Centres"
+  },
+  "43221": {
+    "nic_label": "Installation of plumbing",
+    "division": "Construction",
+    "isic_code": "F4322",
+    "isic_label": "Plumbing, heat and air-conditioning installation",
+    "naics_code": "238220",
+    "naics_label": "Plumbing, Heating and Air-Conditioning Contractors"
+  },
+  "47420": {
+    "nic_label": "Retail sale of audio and video equipment",
+    "division": "Trade",
+    "isic_code": "G4741",
+    "isic_label": "Retail sale of computers, peripheral units, software and telecommunications equipment in specialized stores",
+    "naics_code": "443110",
+    "naics_label": "Appliance, Television and Other Electronics Stores"
+  },
+  "22111": {
+    "nic_label": "Manufacture of rubber tyres for motor vehicles",
+    "division": "Manufacturing",
+    "isic_code": "C2211",
+    "isic_label": "Manufacture of rubber tyres and tubes; retreading and rebuilding of rubber tyres",
+    "naics_code": "326210",
+    "naics_label": "Tire Manufacturing"
+  },
+  "11045": {
+    "nic_label": "Manufacture of soft drinks",
+    "division": "Manufacturing",
+    "isic_code": "C1104",
+    "isic_label": "Manufacture of soft drinks; production of mineral waters and other bottled waters ",
+    "naics_code": "312110",
+    "naics_label": "Soft Drink and Ice Manufacturing"
+  },
+  "1162": {
+    "nic_label": "Growing of jute",
+    "division": "Agriculture",
+    "isic_code": "A0116",
+    "isic_label": "Growing of fibre crops",
+    "naics_code": "111940",
+    "naics_label": "Hay Farming"
+  },
+  "43303": {
+    "nic_label": "Interior painting and decorating",
+    "division": "Construction",
+    "isic_code": "F4330",
+    "isic_label": "Building completion and finishing",
+    "naics_code": "238320",
+    "naics_label": "Painting and Wall Covering Contractors"
+  },
+  "64910": {
+    "nic_label": "Financial leasing",
+    "division": "Finance",
+    "isic_code": "K6491",
+    "isic_label": "Financial leasing",
+    "naics_code": "522291",
+    "naics_label": "Consumer Lending"
+  },
+  "56303": {
+    "nic_label": "Fruit juice bars",
+    "division": "Hospitality",
+    "isic_code": "I5630",
+    "isic_label": "Beverage serving activities",
+    "naics_code": "722410",
+    "naics_label": "Drinking Places (Alcoholic Beverages)"
+  },
+  "45200": {
+    "nic_label": "Maintenance and repair of motor vehicles",
+    "division": "Trade",
+    "isic_code": "G4520",
+    "isic_label": "Maintenance and repair of motor vehicles",
+    "naics_code": "441310",
+    "naics_label": "Automotive Parts and Accessories Stores"
+  },
+  "10732": {
+    "nic_label": "Manufacture of chocolate",
+    "division": "Manufacturing",
+    "isic_code": "C1073",
+    "isic_label": "Manufacture of cocoa, chocolate and sugar confectionery",
+    "naics_code": "311340",
+    "naics_label": "Non-Chocolate Confectionery Manufacturing"
+  },
+  "1140": {
+    "nic_label": "Growing of sugar cane",
+    "division": "Agriculture",
+    "isic_code": "A0114",
+    "isic_label": "Growing of sugar cane",
+    "naics_code": "111930",
+    "naics_label": "Sugar Cane Farming"
+  },
+  "78100": {
+    "nic_label": "Activities of employment placement agencies",
+    "division": "Services",
+    "isic_code": "N7810",
+    "isic_label": "Activities of employment placement agencies",
+    "naics_code": "561310",
+    "naics_label": "Employment Placement Agencies and Executive Search Services"
+  },
+  "10734": {
+    "nic_label": "Manufacture of sweetmeats",
+    "division": "Manufacturing",
+    "isic_code": "C1079",
+    "isic_label": "Manufacture of other food products n.e.c,",
+    "naics_code": "311340",
+    "naics_label": "Non-Chocolate Confectionery Manufacturing"
+  },
+  "1412": {
+    "nic_label": "Production of milk from cows or buffaloes",
+    "division": "Agriculture",
+    "isic_code": "A0141",
+    "isic_label": "Raising of cattle and buffaloes",
+    "naics_code": "112120",
+    "naics_label": "Dairy Cattle and Milk Production"
+  },
+  "56102": {
+    "nic_label": "Cafeterias and fast food restaurants",
+    "division": "Hospitality",
+    "isic_code": "I5610",
+    "isic_label": "Restaurants and mobile food service activities",
+    "naics_code": "722210",
+    "naics_label": "Limited-Service Eating Places"
+  },
+  "10711": {
+    "nic_label": "Manufacture of bread",
+    "division": "Manufacturing",
+    "isic_code": "C1071",
+    "isic_label": "Manufacture of bakery products",
+    "naics_code": "311814",
+    "naics_label": "Commercial Bakeries and Frozen Bakery Product Manufacturing"
+  },
+  "52291": {
+    "nic_label": "Activities of travel agents",
+    "division": "Transport",
+    "isic_code": "N7911",
+    "isic_label": "Travel agency activities",
+    "naics_code": "561510",
+    "naics_label": "Travel Agencies"
+  },
+  "56291": {
+    "nic_label": "Activities of food service contractors",
+    "division": "Hospitality",
+    "isic_code": "I5629",
+    "isic_label": "Other food service activities",
+    "naics_code": "722310",
+    "naics_label": "Food Service Contractors"
+  },
+  "86100": {
+    "nic_label": "Hospital activities",
+    "division": "Healthcare",
+    "isic_code": "Q8610",
+    "isic_label": "Hospital activities",
+    "naics_code": "622111",
+    "naics_label": "General (except Paediatric) Hospitals"
+  },
+  "1271": {
+    "nic_label": "Growing of tea",
+    "division": "Agriculture",
+    "isic_code": "A0127",
+    "isic_label": "Growing of beverage crops",
+    "naics_code": "111419",
+    "naics_label": "Other Food Crops Grown Under Cover"
+  },
+  "10712": {
+    "nic_label": "Manufacture of biscuits and cakes",
+    "division": "Manufacturing",
+    "isic_code": "C1071",
+    "isic_label": "Manufacture of bakery products",
+    "naics_code": "311814",
+    "naics_label": "Commercial Bakeries and Frozen Bakery Product Manufacturing"
+  },
+  "10796": {
+    "nic_label": "Manufacture of papads and appalam",
+    "division": "Manufacturing",
+    "isic_code": "C1079",
+    "isic_label": "Manufacture of other food products n.e.c,",
+    "naics_code": "311919",
+    "naics_label": "Other Snack Food Manufacturing"
+  },
+  "27400": {
+    "nic_label": "Manufacture of electric lighting equipment",
+    "division": "Manufacturing",
+    "isic_code": "C2740",
+    "isic_label": "Manufacture of electric lighting equipment",
+    "naics_code": "335110",
+    "naics_label": "Electric Lamp Bulb and Parts Manufacturing"
+  },
+  "10613": {
+    "nic_label": "Dal (pulses) milling",
+    "division": "Manufacturing",
+    "isic_code": "C1061",
+    "isic_label": "Manufacture of grain mill products",
+    "naics_code": "311211",
+    "naics_label": "Flour Milling"
+  },
+  "47711": {
+    "nic_label": "Retail sale of readymade garments",
+    "division": "Trade",
+    "isic_code": "G4771",
+    "isic_label": "Retail sale of clothing, footwear and leather articles in specialized stores",
+    "naics_code": "448140",
+    "naics_label": "Family Clothing Stores"
+  },
+  "1272": {
+    "nic_label": "Growing of coffee",
+    "division": "Agriculture",
+    "isic_code": "A0127",
+    "isic_label": "Growing of beverage crops",
+    "naics_code": "111419",
+    "naics_label": "Other Food Crops Grown Under Cover"
+  },
+  "5101": {
+    "nic_label": "Opencast mining of hard coal",
+    "division": "Mining",
+    "isic_code": "B0510",
+    "isic_label": "Mining of hard coal",
+    "naics_code": "212114",
+    "naics_label": "Bituminous Coal Mining"
+  },
+  "13931": {
+    "nic_label": "Manufacture of carpets of cotton",
+    "division": "Manufacturing",
+    "isic_code": "C1393",
+    "isic_label": "Manufacture of carpets and rugs",
+    "naics_code": "314110",
+    "naics_label": "Carpet and Rug Mills"
+  },
+  "22201": {
+    "nic_label": "Manufacture of semi-finished plastic products",
+    "division": "Manufacturing",
+    "isic_code": "C2220",
+    "isic_label": "Manufacture of plastics products",
+    "naics_code": "326198",
+    "naics_label": "All Other Plastic Product Manufacturing"
+  },
+  "30911": {
+    "nic_label": "Manufacture of motorcycles and scooters",
+    "division": "Manufacturing",
+    "isic_code": "C3091",
+    "isic_label": "Manufacture of motorcycles",
+    "naics_code": "336120",
+    "naics_label": "Heavy-Duty Truck Manufacturing"
+  },
+  "20238": {
+    "nic_label": "Manufacture of agarbatti",
+    "division": "Manufacturing",
+    "isic_code": "C2029",
+    "isic_label": "Manufacture of other chemical products n.e.c.",
+    "naics_code": "325999",
+    "naics_label": "All Other Miscellaneous Chemical Product Manufacturing"
+  },
+  "23931": {
+    "nic_label": "Manufacture of articles of porcelain and pottery",
+    "division": "Manufacturing",
+    "isic_code": "C2393",
+    "isic_label": "Manufacture of other porcelain and ceramic products",
+    "naics_code": "327110",
+    "naics_label": "Pottery, Ceramics and Plumbing Fixture Manufacturing"
+  },
+  "8107": {
+    "nic_label": "Mining of limestone",
+    "division": "Mining",
+    "isic_code": "B0810",
+    "isic_label": "Quarrying of stone, sand and clay",
+    "naics_code": "212315",
+    "naics_label": "Limestone Mining and Quarrying"
+  },
+  "17023": {
+    "nic_label": "Manufacture of card board boxes",
+    "division": "Manufacturing",
+    "isic_code": "C1702",
+    "isic_label": "Manufacture of corrugated paper and paperboard and of containers of paper and paperboard",
+    "naics_code": "322219",
+    "naics_label": "Other Paperboard Container Manufacturing"
+  },
+  "22203": {
+    "nic_label": "Manufacture of plastic articles for packing",
+    "division": "Manufacturing",
+    "isic_code": "C2220",
+    "isic_label": "Manufacture of plastics products",
+    "naics_code": "326198",
+    "naics_label": "All Other Plastic Product Manufacturing"
+  },
+  "56210": {
+    "nic_label": "Event catering",
+    "division": "Hospitality",
+    "isic_code": "I5621",
+    "isic_label": "Event catering",
+    "naics_code": "722310",
+    "naics_label": "Food Service Contractors"
+  },
+  "10204": {
+    "nic_label": "Processing and preserving of fish",
+    "division": "Manufacturing",
+    "isic_code": "C1020",
+    "isic_label": "Processing and preserving of fish, crustaceans and molluscs",
+    "naics_code": "311710",
+    "naics_label": "Seafood Product Preparation and Packaging"
+  },
+  "1284": {
+    "nic_label": "Growing of spices",
+    "division": "Agriculture",
+    "isic_code": "A0128",
+    "isic_label": "Growing of spices, aromatic, drug and pharmaceutical crops",
+    "naics_code": "111419",
+    "naics_label": "Other Food Crops Grown Under Cover"
+  },
+  "20237": {
+    "nic_label": "Manufacture of cosmetics and toileteries",
+    "division": "Manufacturing",
+    "isic_code": "C2023",
+    "isic_label": "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations",
+    "naics_code": "325620",
+    "naics_label": "Toilet Preparation Manufacturing"
+  },
+  "85491": {
+    "nic_label": "Academic tutoring services",
+    "division": "Education",
+    "isic_code": "P8549",
+    "isic_label": "Other education n.e.c.",
+    "naics_code": "611690",
+    "naics_label": "All Other Schools and Instruction"
+  },
+  "47613": {
+    "nic_label": "Retail sale of stationery",
+    "division": "Trade",
+    "isic_code": "G4761",
+    "isic_label": "Retail sale of books, newspapers and stationary in specialized stores",
+    "naics_code": "451210",
+    "naics_label": "Book Stores and News Dealers"
+  },
+  "25993": {
+    "nic_label": "Manufacture of metal cable and wire",
+    "division": "Manufacturing",
+    "isic_code": "C2599",
+    "isic_label": "Manufacture of other fabricated metal products n.e.c.",
+    "naics_code": "331222",
+    "naics_label": "Steel Wire Drawing"
+  },
+  "1282": {
+    "nic_label": "Growing of chili",
+    "division": "Agriculture",
+    "isic_code": "A0128",
+    "isic_label": "Growing of spices, aromatic, drug and pharmaceutical crops",
+    "naics_code": "111419",
+    "naics_label": "Other Food Crops Grown Under Cover"
+  },
+  "20121": {
+    "nic_label": "Manufacture of urea and organic fertilizers",
+    "division": "Manufacturing",
+    "isic_code": "C2012",
+    "isic_label": "Manufacture of fertilizers and nitrogen compounds",
+    "naics_code": "325314",
+    "naics_label": "Mixed Fertilizer Manufacturing"
+  },
+  "32300": {
+    "nic_label": "Manufacture of sports goods",
+    "division": "Manufacturing",
+    "isic_code": "C3230",
+    "isic_label": "Manufacture of sports goods",
+    "naics_code": "451110",
+    "naics_label": "Sporting Goods Stores"
+  },
+  "32401": {
+    "nic_label": "Manufacture of dolls and toy animals",
+    "division": "Manufacturing",
+    "isic_code": "C3240",
+    "isic_label": "Manufacture of games and toys",
+    "naics_code": "451120",
+    "naics_label": "Hobby, Toy and Game Stores"
+  },
+  "42101": {
+    "nic_label": "Construction of highways and roads",
+    "division": "Construction",
+    "isic_code": "F4210",
+    "isic_label": "Construction of roads and railways",
+    "naics_code": "237310",
+    "naics_label": "Highway, Street and Bridge Construction"
+  },
+  "52102": {
+    "nic_label": "Warehousing non-refrigerated",
+    "division": "Transport",
+    "isic_code": "H5210",
+    "isic_label": "Warehousing and storage",
+    "naics_code": "493110",
+    "naics_label": "General Warehousing and Storage"
+  },
+  "86901": {
+    "nic_label": "Activities of Ayurveda practitioners",
+    "division": "Healthcare",
+    "isic_code": "Q8690",
+    "isic_label": "Other human health activities",
+    "naics_code": "621390",
+    "naics_label": "Offices of All Other Health Practitioners"
+  },
+  "18112": {
+    "nic_label": "Printing of books and magazines",
+    "division": "Manufacturing",
+    "isic_code": "C1811",
+    "isic_label": "Printing",
+    "naics_code": "323119",
+    "naics_label": "Other Printing"
+  },
+  "10304": {
+    "nic_label": "Manufacture of fruit juices",
+    "division": "Manufacturing",
+    "isic_code": "C1030",
+    "isic_label": "Processing and preserving of fruit and vegetables",
+    "naics_code": "311410",
+    "naics_label": "Frozen Food Manufacturing"
+  },
+  "1121": {
+    "nic_label": "Organic farming of basmati rice",
+    "division": "Agriculture",
+    "isic_code": "A0112",
+    "isic_label": "Growing of rice",
+    "naics_code": "111160",
+    "naics_label": "Rice Farming"
+  },
+  "73100": {
+    "nic_label": "Advertising",
+    "division": "Professional",
+    "isic_code": "M7310",
+    "isic_label": "Advertising",
+    "naics_code": "541810",
+    "naics_label": "Advertising Agencies"
+  },
+  "26101": {
+    "nic_label": "Manufacture of electronic components",
+    "division": "Manufacturing",
+    "isic_code": "C2610",
+    "isic_label": "Manufacture of electronic components and boards",
+    "naics_code": "334410",
+    "naics_label": "Semiconductor and Other Electronic Component Manufacturing"
+  },
+  "13942": {
+    "nic_label": "Manufacture of cordage or rope of jute",
+    "division": "Manufacturing",
+    "isic_code": "C1394",
+    "isic_label": "Manufacture of cordage, rope, twine and netting",
+    "naics_code": "314990",
+    "naics_label": "All Other Textile Product Mills"
+  },
+  "1462": {
+    "nic_label": "Production of eggs",
+    "division": "Agriculture",
+    "isic_code": "A0146",
+    "isic_label": "Raising of poultry",
+    "naics_code": "112310",
+    "naics_label": "Chicken Egg Production"
+  },
+  "25991": {
+    "nic_label": "Manufacture of metal fasteners",
+    "division": "Manufacturing",
+    "isic_code": "C2599",
+    "isic_label": "Manufacture of other fabricated metal products n.e.c.",
+    "naics_code": "332329",
+    "naics_label": "Other Ornamental and Architectural Metal Product Manufacturing"
+  },
+  "86201": {
+    "nic_label": "Medical practice activities",
+    "division": "Healthcare",
+    "isic_code": "Q8620",
+    "isic_label": "Medical and dental practice activities",
+    "naics_code": "621110",
+    "naics_label": "Offices of Physicians"
+  },
+  "26201": {
+    "nic_label": "Manufacture of desktop and laptop computers",
+    "division": "Manufacturing",
+    "isic_code": "C2620",
+    "isic_label": "Manufacture of computers and peripheral equipment",
+    "naics_code": "334110",
+    "naics_label": "Computer and Peripheral Equipment Manufacturing"
+  },
+  "47211": {
+    "nic_label": "Retail sale of cereals and pulses",
+    "division": "Trade",
+    "isic_code": "G4721",
+    "isic_label": "Retail sale of food in specialized stores",
+    "naics_code": "445110",
+    "naics_label": "Supermarkets and Other Grocery (except Convenience) Stores"
+  },
+  "13121": {
+    "nic_label": "Weaving of cotton fabrics",
+    "division": "Manufacturing",
+    "isic_code": "C1312",
+    "isic_label": "Weaving of textiles",
+    "naics_code": "313210",
+    "naics_label": "Broad-Woven Fabric Mills"
+  },
+  "10306": {
+    "nic_label": "Manufacture of pickles and chutney",
+    "division": "Manufacturing",
+    "isic_code": "C1030",
+    "isic_label": "Processing and preserving of fruit and vegetables",
+    "naics_code": "311420",
+    "naics_label": "Fruit and Vegetable Canning, Pickling and Drying"
+  },
+  "49224": {
+    "nic_label": "Taxi operation",
+    "division": "Transport",
+    "isic_code": "H4922",
+    "isic_label": "Other passenger land transport",
+    "naics_code": "485310",
+    "naics_label": "Taxi Service"
+  },
+  "16211": {
+    "nic_label": "Manufacture of plywood and veneer",
+    "division": "Manufacturing",
+    "isic_code": "C1621",
+    "isic_label": "Manufacture of veneer sheets and wood-based panels",
+    "naics_code": "321211",
+    "naics_label": "Hardwood Veneer and Plywood Mills"
+  },
+  "25992": {
+    "nic_label": "Manufacture of containers tins and cans",
+    "division": "Manufacturing",
+    "isic_code": "C2599",
+    "isic_label": "Manufacture of other fabricated metal products n.e.c.",
+    "naics_code": "332999",
+    "naics_label": "All Other Miscellaneous Fabricated Metal Product Manufacturing"
+  },
+  "47733": {
+    "nic_label": "Retail sale of jewellery",
+    "division": "Trade",
+    "isic_code": "G4773",
+    "isic_label": "Other retail sale of new goods in specialized stores",
+    "naics_code": "448310",
+    "naics_label": "Jewellery Stores"
+  },
+  "13913": {
+    "nic_label": "Manufacture of knitted synthetic fabrics",
+    "division": "Manufacturing",
+    "isic_code": "C1391",
+    "isic_label": "Manufacture of knitted and crocheted fabrics",
+    "naics_code": "313240",
+    "naics_label": "Knit Fabric Mills"
+  },
+  "68200": {
+    "nic_label": "Real estate activities on fee basis",
+    "division": "Real Estate",
+    "isic_code": "L6820",
+    "isic_label": "Real estate activities on a fee or contract basis",
+    "naics_code": "531211",
+    "naics_label": "Real Estate Agents"
+  },
+  "21006": {
+    "nic_label": "Manufacture of medical wadding gauze bandages",
+    "division": "Manufacturing",
+    "isic_code": "C2100",
+    "isic_label": "Manufacture of pharmaceuticals, medicinal chemical and botanical products",
+    "naics_code": "339110",
+    "naics_label": "Medical Equipment and Supplies Manufacturing"
+  },
+  "56302": {
+    "nic_label": "Tea and coffee shops",
+    "division": "Hospitality",
+    "isic_code": "I5630",
+    "isic_label": "Beverage serving activities",
+    "naics_code": "722410",
+    "naics_label": "Drinking Places (Alcoholic Beverages)"
+  },
+  "1132": {
+    "nic_label": "Growing of fruit-bearing vegetables",
+    "division": "Agriculture",
+    "isic_code": "A0113",
+    "isic_label": "Growing of vegetables and melons, roots and tubers",
+    "naics_code": "111219",
+    "naics_label": "Other Vegetable (except Potato) and Melon Farming"
+  },
+  "25994": {
+    "nic_label": "Manufacture of metal household articles",
+    "division": "Manufacturing",
+    "isic_code": "C2599",
+    "isic_label": "Manufacture of other fabricated metal products n.e.c.",
+    "naics_code": "332999",
+    "naics_label": "All Other Miscellaneous Fabricated Metal Product Manufacturing"
+  },
+  "15201": {
+    "nic_label": "Manufacture of leather footwear",
+    "division": "Manufacturing",
+    "isic_code": "C1520",
+    "isic_label": "Manufacture of footwear",
+    "naics_code": "316210",
+    "naics_label": "Footwear Manufacturing"
+  },
+  "47300": {
+    "nic_label": "Retail sale of automotive fuel",
+    "division": "Trade",
+    "isic_code": "G4730",
+    "isic_label": "Retail sale of automotive fuel in specialized stores",
+    "naics_code": "447110",
+    "naics_label": "Gasoline Stations with Convenience Stores"
+  },
+  "23921": {
+    "nic_label": "Manufacture of bricks",
+    "division": "Manufacturing",
+    "isic_code": "C2392",
+    "isic_label": "Manufacture of clay building materials",
+    "naics_code": "327120",
+    "naics_label": "Clay Building Material and Refractory Manufacturing"
+  },
+  "10801": {
+    "nic_label": "Manufacture of cattle feed",
+    "division": "Manufacturing",
+    "isic_code": "C1080",
+    "isic_label": "Manufacture of prepared animal feeds",
+    "naics_code": "311119",
+    "naics_label": "Other Animal Food Manufacturing"
+  },
+  "47190": {
+    "nic_label": "Other retail sale in non-specialized stores",
+    "division": "Trade",
+    "isic_code": "G4719",
+    "isic_label": "Other retail sale in non-specialized stores",
+    "naics_code": "452910",
+    "naics_label": "Warehouse Clubs and Superstores"
+  },
+  "85211": {
+    "nic_label": "General school education first stage",
+    "division": "Education",
+    "isic_code": "P8521",
+    "isic_label": "General secondary education",
+    "naics_code": "611110",
+    "naics_label": "Elementary and Secondary Schools"
+  },
+  "20235": {
+    "nic_label": "Manufacture of dental hygiene preparations",
+    "division": "Manufacturing",
+    "isic_code": "C2023",
+    "isic_label": "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations",
+    "naics_code": "325620",
+    "naics_label": "Toilet Preparation Manufacturing"
+  },
+  "20233": {
+    "nic_label": "Manufacture of detergent",
+    "division": "Manufacturing",
+    "isic_code": "C2023",
+    "isic_label": "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations",
+    "naics_code": "325610",
+    "naics_label": "Soap and Cleaning Compound Manufacturing"
+  },
+  "41001": {
+    "nic_label": "Construction of buildings",
+    "division": "Construction",
+    "isic_code": "F4100",
+    "isic_label": "Construction of buildings",
+    "naics_code": "236220",
+    "naics_label": "Commercial and Institutional Building Construction"
+  },
+  "11043": {
+    "nic_label": "Manufacture of mineral water",
+    "division": "Manufacturing",
+    "isic_code": "C1104",
+    "isic_label": "Manufacture of soft drinks; production of mineral waters and other bottled waters ",
+    "naics_code": "312110",
+    "naics_label": "Soft Drink and Ice Manufacturing"
+  },
+  "24103": {
+    "nic_label": "Manufacture of steel",
+    "division": "Manufacturing",
+    "isic_code": "C2410",
+    "isic_label": "Manufacture of basic iron and steel",
+    "naics_code": "331110",
+    "naics_label": "Iron and Steel Mills and Ferro-Alloy Manufacturing"
+  },
+  "86903": {
+    "nic_label": "Activities of homeopaths",
+    "division": "Healthcare",
+    "isic_code": "Q8690",
+    "isic_label": "Other human health activities",
+    "naics_code": "621390",
+    "naics_label": "Offices of All Other Health Practitioners"
+  },
+  "24201": {
+    "nic_label": "Manufacture of copper products",
+    "division": "Manufacturing",
+    "isic_code": "C2420",
+    "isic_label": "Manufacture of basic precious and other non-ferrous metals",
+    "naics_code": "331420",
+    "naics_label": "Copper Rolling, Drawing, Extruding and Alloying"
+  },
+  "69201": {
+    "nic_label": "Accounting and auditing activities",
+    "division": "Finance",
+    "isic_code": "M6920",
+    "isic_label": "Accounting, bookkeeping and auditing activities; tax consultancy",
+    "naics_code": "541212",
+    "naics_label": "Offices of Accountants"
+  },
+  "35202": {
+    "nic_label": "Distribution and sale of gaseous fuels",
+    "division": "Energy",
+    "isic_code": "D3520",
+    "isic_label": "Manufacture of gas; distribution of gaseous fuels through mains",
+    "naics_code": "221210",
+    "naics_label": "Natural Gas Distribution"
+  },
+  "21004": {
+    "nic_label": "Manufacture of homoeopathic pharmaceutical preparations",
+    "division": "Manufacturing",
+    "isic_code": "C2100",
+    "isic_label": "Manufacture of pharmaceuticals, medicinal chemical and botanical products",
+    "naics_code": "325410",
+    "naics_label": "Pharmaceutical and Medicine Manufacturing"
+  },
+  "33121": {
+    "nic_label": "Repair of engines and turbines",
+    "division": "Manufacturing",
+    "isic_code": "C3312",
+    "isic_label": "Repair of machinery",
+    "naics_code": "811310",
+    "naics_label": "Commercial and Industrial Machinery and Equipment (except Automotive and Electronic) Repair and Maintenance"
+  },
+  "62020": {
+    "nic_label": "Computer consultancy",
+    "division": "IT Services",
+    "isic_code": "J6202",
+    "isic_label": "Computer consultancy and computer facilities management activities",
+    "naics_code": "541510",
+    "naics_label": "Computer Systems Design and Related Services"
+  },
+  "1131": {
+    "nic_label": "Growing of vegetables",
+    "division": "Agriculture",
+    "isic_code": "A0113",
+    "isic_label": "Growing of vegetables and melons, roots and tubers",
+    "naics_code": "111219",
+    "naics_label": "Other Vegetable (except Potato) and Melon Farming"
+  },
+  "10791": {
+    "nic_label": "Processing and blending of tea",
+    "division": "Manufacturing",
+    "isic_code": "C1079",
+    "isic_label": "Manufacture of other food products n.e.c,",
+    "naics_code": "311920",
+    "naics_label": "Coffee and Tea Manufacturing"
+  },
+  "85223": {
+    "nic_label": "Professional motor driving school",
+    "division": "Education",
+    "isic_code": "P8549",
+    "isic_label": "Other education n.e.c.",
+    "naics_code": "611690",
+    "naics_label": "All Other Schools and Instruction"
+  },
+  "61104": {
+    "nic_label": "Activities providing internet access",
+    "division": "IT Services",
+    "isic_code": "J6110",
+    "isic_label": "Wired telecommunications activities",
+    "naics_code": "517111",
+    "naics_label": "Wired Telecommunications Carriers (except Cable)"
+  },
+  "10721": {
+    "nic_label": "Manufacture of sugar from sugarcane",
+    "division": "Manufacturing",
+    "isic_code": "C1072",
+    "isic_label": "Manufacture of sugar",
+    "naics_code": "311310",
+    "naics_label": "Sugar Manufacturing"
+  },
+  "24101": {
+    "nic_label": "Manufacture of pig iron",
+    "division": "Manufacturing",
+    "isic_code": "C2410",
+    "isic_label": "Manufacture of basic iron and steel",
+    "naics_code": "331110",
+    "naics_label": "Iron and Steel Mills and Ferro-Alloy Manufacturing"
+  },
+  "32504": {
+    "nic_label": "Manufacture of medical instruments",
+    "division": "Manufacturing",
+    "isic_code": "C3250",
+    "isic_label": "Manufacture of medical and dental instruments and supplies",
+    "naics_code": "339110",
+    "naics_label": "Medical Equipment and Supplies Manufacturing"
+  },
+  "27331": {
+    "nic_label": "Manufacture of switch and socket",
+    "division": "Manufacturing",
+    "isic_code": "C2790",
+    "isic_label": "Manufacture of other electrical equipment",
+    "naics_code": "335315",
+    "naics_label": "Switchgear and Switchboard, and Relay and Industrial Control Apparatus Manufacturing"
+  },
+  "82300": {
+    "nic_label": "Organization of conventions and trade shows",
+    "division": "Services",
+    "isic_code": "N8230",
+    "isic_label": "Organization of conventions and trade shows",
+    "naics_code": "561920",
+    "naics_label": "Convention and Trade Show Organizers"
+  },
+  "10201": {
+    "nic_label": "Sun-drying of fish",
+    "division": "Manufacturing",
+    "isic_code": "C1020",
+    "isic_label": "Processing and preserving of fish, crustaceans and molluscs",
+    "naics_code": "311710",
+    "naics_label": "Seafood Product Preparation and Packaging"
+  },
+  "13122": {
+    "nic_label": "Weaving of silk fabrics",
+    "division": "Manufacturing",
+    "isic_code": "C1312",
+    "isic_label": "Weaving of textiles",
+    "naics_code": "313210",
+    "naics_label": "Broad-Woven Fabric Mills"
+  },
+  "63992": {
+    "nic_label": "Activities of cyber cafe",
+    "division": "IT Services",
+    "isic_code": "J6312",
+    "isic_label": "Web portals",
+    "naics_code": "519190",
+    "naics_label": "All Other Information Services"
+  },
+  "95291": {
+    "nic_label": "Repair of bicycles",
+    "division": "Services",
+    "isic_code": "S9529",
+    "isic_label": "Repair of other personal and household goods",
+    "naics_code": "811490",
+    "naics_label": "Other Personal and Household Goods Repair and Maintenance"
+  },
+  "1122": {
+    "nic_label": "Organic farming of non-basmati rice",
+    "division": "Agriculture",
+    "isic_code": "A0112",
+    "isic_label": "Growing of rice",
+    "naics_code": "111160",
+    "naics_label": "Rice Farming"
+  },
+  "86905": {
+    "nic_label": "Activities of diagnostic laboratories",
+    "division": "Healthcare",
+    "isic_code": "Q8690",
+    "isic_label": "Other human health activities",
+    "naics_code": "621510",
+    "naics_label": "Medical and Diagnostic Laboratories"
+  },
+  "13992": {
+    "nic_label": "Zari work and ornamental trimmings",
+    "division": "Manufacturing",
+    "isic_code": "C1399",
+    "isic_label": "Manufacture of other textiles n.e.c.",
+    "naics_code": "313220",
+    "naics_label": "Narrow Fabric Mills and Schiffli Machine Embroidery"
+  },
+  "27201": {
+    "nic_label": "Manufacture of primary cells and batteries",
+    "division": "Manufacturing",
+    "isic_code": "C2720",
+    "isic_label": "Manufacture of batteries and accumulators",
+    "naics_code": "335910",
+    "naics_label": "Battery Manufacturing"
+  },
+  "27503": {
+    "nic_label": "Manufacture of electric fans",
+    "division": "Manufacturing",
+    "isic_code": "C2750",
+    "isic_label": "Manufacture of domestic appliances",
+    "naics_code": "335210",
+    "naics_label": "Small Electrical Appliance Manufacturing"
+  },
+  "28211": {
+    "nic_label": "Manufacture of tractors for agriculture",
+    "division": "Manufacturing",
+    "isic_code": "C2821",
+    "isic_label": "Manufacture of agricultural and forestry machinery",
+    "naics_code": "333110",
+    "naics_label": "Agricultural Implement Manufacturing"
+  },
+  "95230": {
+    "nic_label": "Repair of footwear and leather goods",
+    "division": "Services",
+    "isic_code": "S9523",
+    "isic_label": "Repair of footwear and leather goods",
+    "naics_code": "811430",
+    "naics_label": "Footwear and Leather Goods Repair"
+  },
+  "3111": {
+    "nic_label": "Fishing in ocean and coastal waters",
+    "division": "Agriculture",
+    "isic_code": "A0311",
+    "isic_label": "Marine fishing",
+    "naics_code": "114113",
+    "naics_label": "Salt Water Fishing"
+  },
+  "20221": {
+    "nic_label": "Manufacture of paints and varnishes",
+    "division": "Manufacturing",
+    "isic_code": "C2022",
+    "isic_label": "Manufacture of paints, varnishes and similar coatings, printing ink and mastics",
+    "naics_code": "325510",
+    "naics_label": "Paint and Coating Manufacturing"
+  },
+  "20212": {
+    "nic_label": "Manufacture of disinfectants",
+    "division": "Manufacturing",
+    "isic_code": "C2029",
+    "isic_label": "Manufacture of other chemical products n.e.c.",
+    "naics_code": "325610",
+    "naics_label": "Soap and Cleaning Compound Manufacturing"
+  },
+  "49231": {
+    "nic_label": "Motorised road freight transport",
+    "division": "Transport",
+    "isic_code": "H4923",
+    "isic_label": "Freight transport by road",
+    "naics_code": "484110",
+    "naics_label": "General Freight Trucking, Local"
+  },
+  "85301": {
+    "nic_label": "Higher education",
+    "division": "Education",
+    "isic_code": "P8530",
+    "isic_label": "Higher education",
+    "naics_code": "611310",
+    "naics_label": "Universities"
+  },
+  "74103": {
+    "nic_label": "Services of graphic designers",
+    "division": "Professional",
+    "isic_code": "M7410",
+    "isic_label": "Specialized design activities",
+    "naics_code": "541430",
+    "naics_label": "Graphic Design Services"
+  },
+  "1261": {
+    "nic_label": "Growing of coconut",
+    "division": "Agriculture",
+    "isic_code": "A0126",
+    "isic_label": "Growing of oleaginous fruits",
+    "naics_code": "111419",
+    "naics_label": "Other Food Crops Grown Under Cover"
+  },
+  "47522": {
+    "nic_label": "Retail sale of hardware",
+    "division": "Trade",
+    "isic_code": "G4752",
+    "isic_label": "Retail sale of hardware, paints and glass in specialized stores",
+    "naics_code": "444130",
+    "naics_label": "Hardware Stores"
+  },
+  "61103": {
+    "nic_label": "Activities of cable operators",
+    "division": "IT Services",
+    "isic_code": "J6120",
+    "isic_label": "Wireless telecommunications activities",
+    "naics_code": "515210",
+    "naics_label": "Pay and Specialty Television"
+  },
+  "74201": {
+    "nic_label": "Commercial photograph production",
+    "division": "Professional",
+    "isic_code": "M7420",
+    "isic_label": "Photographic activities",
+    "naics_code": "541920",
+    "naics_label": "Photographic Services"
+  },
+  "10740": {
+    "nic_label": "Manufacture of macaroni and noodles",
+    "division": "Manufacturing",
+    "isic_code": "C1074",
+    "isic_label": "Manufacture of macaroni, noodles, couscous and similar farinaceous products ",
+    "naics_code": "311823",
+    "naics_label": "Dry Pasta Manufacturing"
+  },
+  "1281": {
+    "nic_label": "Growing of ginger",
+    "division": "Agriculture",
+    "isic_code": "A0128",
+    "isic_label": "Growing of spices, aromatic, drug and pharmaceutical crops",
+    "naics_code": "111419",
+    "naics_label": "Other Food Crops Grown Under Cover"
+  },
+  "20234": {
+    "nic_label": "Manufacture of perfumes",
+    "division": "Manufacturing",
+    "isic_code": "C2023",
+    "isic_label": "Manufacture of soap and detergents, cleaning and polishing preparations, perfumes and toilet preparations",
+    "naics_code": "325620",
+    "naics_label": "Toilet Preparation Manufacturing"
+  },
+  "22202": {
+    "nic_label": "Manufacture of plastic household articles",
+    "division": "Manufacturing",
+    "isic_code": "C2220",
+    "isic_label": "Manufacture of plastics products",
+    "naics_code": "326198",
+    "naics_label": "All Other Plastic Product Manufacturing"
+  },
+  "49221": {
+    "nic_label": "Long distance bus services",
+    "division": "Transport",
+    "isic_code": "H4922",
+    "isic_label": "Other passenger land transport",
+    "naics_code": "485210",
+    "naics_label": "Interurban and Rural Bus Transportation"
+  },
+  "81210": {
+    "nic_label": "General cleaning of buildings",
+    "division": "Services",
+    "isic_code": "N8121",
+    "isic_label": "General cleaning of buildings",
+    "naics_code": "561722",
+    "naics_label": "Janitorial Services (except Window Cleaning)"
+  },
+  "25934": {
+    "nic_label": "Manufacture of padlocks and locks",
+    "division": "Manufacturing",
+    "isic_code": "C2593",
+    "isic_label": "Manufacture of cutlery, hand tools and general hardware",
+    "naics_code": "332510",
+    "naics_label": "Hardware Manufacturing"
+  },
+  "74101": {
+    "nic_label": "Fashion design",
+    "division": "Professional",
+    "isic_code": "M7410",
+    "isic_label": "Specialized design activities",
+    "naics_code": "541490",
+    "naics_label": "Other Specialized Design Services"
+  },
+  "1133": {
+    "nic_label": "Growing of onion",
+    "division": "Agriculture",
+    "isic_code": "A0113",
+    "isic_label": "Growing of vegetables and melons, roots and tubers",
+    "naics_code": "111219",
+    "naics_label": "Other Vegetable (except Potato) and Melon Farming"
+  },
+  "18119": {
+    "nic_label": "Printing activities",
+    "division": "Manufacturing",
+    "isic_code": "C1811",
+    "isic_label": "Printing",
+    "naics_code": "323119",
+    "naics_label": "Other Printing"
+  },
+  "35105": {
+    "nic_label": "Electric power generation using solar energy",
+    "division": "Energy",
+    "isic_code": "D3510",
+    "isic_label": "Electric power generation, transmission and distribution",
+    "naics_code": "221119",
+    "naics_label": "Other Electric Power Generation"
+  },
+  "23941": {
+    "nic_label": "Manufacture of clinkers and cement",
+    "division": "Manufacturing",
+    "isic_code": "C2394",
+    "isic_label": "Manufacture of cement, lime and plaster",
+    "naics_code": "327310",
+    "naics_label": "Cement Manufacturing"
+  },
+  "32120": {
+    "nic_label": "Manufacture of imitation jewellery",
+    "division": "Manufacturing",
+    "isic_code": "C3212",
+    "isic_label": "Manufacture of imitation jewellery and related articles",
+    "naics_code": "448310",
+    "naics_label": "Jewellery Stores"
+  },
+  "10502": {
+    "nic_label": "Manufacture of milk powder",
+    "division": "Manufacturing",
+    "isic_code": "C1050",
+    "isic_label": "Manufacture of dairy products",
+    "naics_code": "311511",
+    "naics_label": "Fluid Milk Manufacturing"
+  },
+  "8106": {
+    "nic_label": "Operation of sand or gravel pits",
+    "division": "Mining",
+    "isic_code": "B0810",
+    "isic_label": "Quarrying of stone, sand and clay",
+    "naics_code": "212323",
+    "naics_label": "Sand and Gravel Mining and Quarrying"
+  },
+  "66120": {
+    "nic_label": "Security and commodity contracts brokerage",
+    "division": "Finance",
+    "isic_code": "K6612",
+    "isic_label": "Security and commodity contracts brokerage",
+    "naics_code": "523120",
+    "naics_label": "Securities Brokerage"
+  },
+  "35109": {
+    "nic_label": "Collection and distribution of electric energy",
+    "division": "Energy",
+    "isic_code": "D3510",
+    "isic_label": "Electric power generation, transmission and distribution",
+    "naics_code": "221122",
+    "naics_label": "Electric Power Distribution"
+  },
+  "10305": {
+    "nic_label": "Manufacture of sauces jams and jellies",
+    "division": "Manufacturing",
+    "isic_code": "C1030",
+    "isic_label": "Processing and preserving of fruit and vegetables",
+    "naics_code": "311420",
+    "naics_label": "Fruit and Vegetable Canning, Pickling and Drying"
+  },
+  "30921": {
+    "nic_label": "Manufacture of bicycles",
+    "division": "Manufacturing",
+    "isic_code": "C3092",
+    "isic_label": "Manufacture of bicycles and invalid carriages",
+    "naics_code": "336990",
+    "naics_label": "Other Transportation Equipment Manufacturing"
+  },
+  "22191": {
+    "nic_label": "Manufacture of rubber plates and tubes",
+    "division": "Manufacturing",
+    "isic_code": "C2219",
+    "isic_label": "Manufacture of other rubber products",
+    "naics_code": "326290",
+    "naics_label": "Other Rubber Product Manufacturing"
+  },
+  "24202": {
+    "nic_label": "Manufacture of aluminium products",
+    "division": "Manufacturing",
+    "isic_code": "C2420",
+    "isic_label": "Manufacture of basic precious and other non-ferrous metals",
+    "naics_code": "331317",
+    "naics_label": "Aluminum Rolling, Drawing, Extruding and Alloying"
+  },
+  "35106": {
+    "nic_label": "Electric power generation non conventional",
+    "division": "Energy",
+    "isic_code": "D3510",
+    "isic_label": "Electric power generation, transmission and distribution",
+    "naics_code": "221119",
+    "naics_label": "Other Electric Power Generation"
+  },
+  "7100": {
+    "nic_label": "Mining of iron ores",
+    "division": "Mining",
+    "isic_code": "B0710",
+    "isic_label": "Mining of iron ores",
+    "naics_code": "212210",
+    "naics_label": "Iron Ore Mining"
+  },
+  "8101": {
+    "nic_label": "Quarrying of marble",
+    "division": "Mining",
+    "isic_code": "B0810",
+    "isic_label": "Quarrying of stone, sand and clay",
+    "naics_code": "212316",
+    "naics_label": "Marble Mining and Quarrying"
+  }
+}

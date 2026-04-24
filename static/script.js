@@ -48,8 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function renderResultCard(result) {
-        // Add conversational text first
-        addMessage("Based on your description, here’s the most relevant classification:");
+        addMessage("Based on your description, here's the most relevant classification:");
 
         const template = document.getElementById('resultCardTemplate');
         const cardWrapper = document.createElement('div');
@@ -57,9 +56,20 @@ document.addEventListener('DOMContentLoaded', () => {
         
         const card = template.content.cloneNode(true);
         
-        card.querySelector('.nic-code').textContent = `NIC ${result.top_nics[0].nic_code}`;
+        // NIC badge
+        card.querySelector('.nic-code').textContent = result.top_nics[0].nic_code;
         card.querySelector('.sector-label').textContent = result.division;
         card.querySelector('.activity-label').textContent = result.top_nics[0].nic_label;
+        
+        // ISIC badge
+        const isic = result.isic || {};
+        card.querySelector('.isic-code').textContent = isic.code || '—';
+        card.querySelector('.isic-label').textContent = isic.label || '—';
+        
+        // NAICS badge
+        const naics = result.naics || {};
+        card.querySelector('.naics-code').textContent = naics.code || '—';
+        card.querySelector('.naics-label').textContent = naics.label || '—';
         
         // Confidence formatting
         const confPercent = Math.round(result.top_nics[0].confidence * 100);
@@ -68,7 +78,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const barFill = card.querySelector('.confidence-bar-fill');
         const textLabel = card.querySelector('.confidence-text-label');
         
-        // Slight delay for animation
         setTimeout(() => {
             barFill.style.width = `${confPercent}%`;
             if (confPercent >= 80) {
@@ -163,7 +172,6 @@ document.addEventListener('DOMContentLoaded', () => {
     async function handleClarificationSelect(answer, optionsWrapperNode) {
         if (!answer.trim()) return;
         
-        // Disable buttons so they can't be clicked again
         const buttons = optionsWrapperNode.querySelectorAll('.option-btn');
         buttons.forEach(b => {
             b.disabled = true;
@@ -174,7 +182,7 @@ document.addEventListener('DOMContentLoaded', () => {
         addMessage(answer, true);
         
         const combinedText = `${currentBaseContext} ${answer}`;
-        currentBaseContext = ""; // Reset
+        currentBaseContext = "";
         
         await fetchPrediction(combinedText);
     }
@@ -183,7 +191,6 @@ document.addEventListener('DOMContentLoaded', () => {
         showTypingIndicator();
         sendBtn.disabled = true;
         
-        // Artificial delay to make it feel like AI is "thinking"
         await new Promise(r => setTimeout(r, 600));
 
         try {
@@ -221,7 +228,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         addMessage(text, true);
         userInput.value = '';
-        currentBaseContext = ""; // Reset
+        currentBaseContext = "";
         
         fetchPrediction(text);
     });

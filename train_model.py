@@ -1,12 +1,11 @@
 """
-Udyam NIC Code Predictor — Training Script v2
-===============================================
-Key improvements:
-  - Loads expanded v2 dataset
-  - Division labels normalized to match UDYAM_GUIDANCE keys
-  - Larger model (embed_dim=192, 3 transformer layers)
-  - Label smoothing for better generalization
-  - Cosine LR scheduler 
+Udyam Multi-Code Predictor — Training Script v3
+=================================================
+Trains a single Transformer model with FOUR output heads:
+  1. nic_out   — NIC code classification
+  2. div_out   — Division/Sector classification
+  3. isic_out  — ISIC Rev4 code classification
+  4. naics_out — NAICS code classification
 """
 
 import pandas as pd
@@ -29,49 +28,78 @@ else:
 
 
 # =====================================================
-# 1. LOAD DATA
+# 1. LOAD UNIFIED DATA
 # =====================================================
 
-df = pd.read_csv("data/industries.csv")
+df = pd.read_csv("data/industries_unified.csv")
 df = df.drop_duplicates(subset=["text", "nic_code"])
-df["nic_code"] = df["nic_code"].astype(str)
+df["nic_code"]   = df["nic_code"].astype(str)
+df["isic_code"]  = df["isic_code"].astype(str)
+df["naics_code"] = df["naics_code"].astype(str)
 
 print(f"\nLoaded {len(df)} samples")
-print(f"Unique NIC codes : {df['nic_code'].nunique()}")
-print(f"Unique divisions : {df['division'].nunique()} → {sorted(df['division'].unique())}")
+print(f"Unique NIC codes   : {df['nic_code'].nunique()}")
+print(f"Unique ISIC codes  : {df['isic_code'].nunique()}")
+print(f"Unique NAICS codes : {df['naics_code'].nunique()}")
+print(f"Unique divisions   : {df['division'].nunique()} → {sorted(df['division'].unique())}")
 
-texts     = df["text"].astype(str).values.astype("U")   # Unicode string dtype
-nic_codes = df["nic_code"].astype(str).values.astype("U")
-divisions = df["division"].astype(str).values.astype("U")
+texts      = df["text"].astype(str).values.astype("U")
+nic_codes  = df["nic_code"].astype(str).values.astype("U")
+divisions  = df["division"].astype(str).values.astype("U")
+isic_codes = df["isic_code"].astype(str).values.astype("U")
+naics_codes = df["naics_code"].astype(str).values.astype("U")
 
 # =====================================================
 # 2. ENCODE LABELS
 # =====================================================
 
-nic_encoder = LabelEncoder()
-div_encoder = LabelEncoder()
+nic_encoder   = LabelEncoder()
+div_encoder   = LabelEncoder()
+isic_encoder  = LabelEncoder()
+naics_encoder = LabelEncoder()
 
-y_nic = nic_encoder.fit_transform(nic_codes)
-y_div = div_encoder.fit_transform(divisions)
+y_nic   = nic_encoder.fit_transform(nic_codes)
+y_div   = div_encoder.fit_transform(divisions)
+y_isic  = isic_encoder.fit_transform(isic_codes)
+y_naics = naics_encoder.fit_transform(naics_codes)
 
-num_nic = len(nic_encoder.classes_)
-num_div = len(div_encoder.classes_)
+num_nic   = len(nic_encoder.classes_)
+num_div   = len(div_encoder.classes_)
+num_isic  = len(isic_encoder.classes_)
+num_naics = len(naics_encoder.classes_)
 
-print(f"\nNIC classes  : {num_nic}")
+print(f"\nNIC classes    : {num_nic}")
 print(f"Division classes: {num_div} → {list(div_encoder.classes_)}")
+print(f"ISIC classes   : {num_isic}")
+print(f"NAICS classes  : {num_naics}")
 
 # Save label maps
 label_map = {
-    "nic": {str(i): c for i, c in enumerate(nic_encoder.classes_)},
-    "division": {str(i): c for i, c in enumerate(div_encoder.classes_)},
+    "nic":       {str(i): c for i, c in enumerate(nic_encoder.classes_)},
+    "division":  {str(i): c for i, c in enumerate(div_encoder.classes_)},
+    "isic":      {str(i): c for i, c in enumerate(isic_encoder.classes_)},
+    "naics":     {str(i): c for i, c in enumerate(naics_encoder.classes_)},
 }
 
+# NIC label lookup
 nic_label_map = {}
 for _, row in df[["nic_code", "nic_label"]].drop_duplicates().iterrows():
     nic_label_map[str(row["nic_code"])] = row["nic_label"]
 label_map["nic_labels"] = nic_label_map
 
-# Save division→guidance lookup separately
+# ISIC label lookup
+isic_label_map = {}
+for _, row in df[["isic_code", "isic_label"]].drop_duplicates().iterrows():
+    isic_label_map[str(row["isic_code"])] = row["isic_label"]
+label_map["isic_labels"] = isic_label_map
+
+# NAICS label lookup
+naics_label_map = {}
+for _, row in df[["naics_code", "naics_label"]].drop_duplicates().iterrows():
+    naics_label_map[str(row["naics_code"])] = row["naics_label"]
+label_map["naics_labels"] = naics_label_map
+
+# Division→NIC lookup
 div_nic_map = {}
 for _, row in df[["nic_code", "division"]].drop_duplicates().iterrows():
     div_nic_map[str(row["nic_code"])] = row["division"]
@@ -86,16 +114,24 @@ print("Label maps saved → models/label_map.json")
 # 3. TRAIN / TEST SPLIT
 # =====================================================
 
-X_train, X_test, yn_train, yn_test, yd_train, yd_test = train_test_split(
-    texts, y_nic, y_div, test_size=0.15, random_state=42, stratify=y_nic
+(X_train, X_test,
+ yn_train, yn_test,
+ yd_train, yd_test,
+ yi_train, yi_test,
+ yna_train, yna_test) = train_test_split(
+    texts, y_nic, y_div, y_isic, y_naics,
+    test_size=0.15, random_state=42, stratify=y_nic
 )
 
-# Convert to categorical for label smoothing support
-yn_train = tf.keras.utils.to_categorical(yn_train, num_nic)
-yn_test  = tf.keras.utils.to_categorical(yn_test, num_nic)
-yd_train = tf.keras.utils.to_categorical(yd_train, num_div)
-yd_test  = tf.keras.utils.to_categorical(yd_test, num_div)
-
+# Convert to categorical
+yn_train  = tf.keras.utils.to_categorical(yn_train, num_nic)
+yn_test   = tf.keras.utils.to_categorical(yn_test, num_nic)
+yd_train  = tf.keras.utils.to_categorical(yd_train, num_div)
+yd_test   = tf.keras.utils.to_categorical(yd_test, num_div)
+yi_train  = tf.keras.utils.to_categorical(yi_train, num_isic)
+yi_test   = tf.keras.utils.to_categorical(yi_test, num_isic)
+yna_train = tf.keras.utils.to_categorical(yna_train, num_naics)
+yna_test  = tf.keras.utils.to_categorical(yna_test, num_naics)
 
 print(f"\nTrain: {len(X_train)} | Test: {len(X_test)}")
 
@@ -175,10 +211,11 @@ class TransformerBlock(tf.keras.layers.Layer):
         return config
 
 # =====================================================
-# 6. BUILD MODEL — larger & deeper
+# 6. BUILD MODEL — 4 output heads
 # =====================================================
 
-def build_model(vocab_size, embed_dim, seq_len, num_heads, ff_dim, num_nic, num_div):
+def build_model(vocab_size, embed_dim, seq_len, num_heads, ff_dim,
+                num_nic, num_div, num_isic, num_naics):
     inputs = tf.keras.Input(shape=(seq_len,), name="token_ids")
 
     tok_emb = tf.keras.layers.Embedding(
@@ -198,10 +235,16 @@ def build_model(vocab_size, embed_dim, seq_len, num_heads, ff_dim, num_nic, num_
     shared = tf.keras.layers.Dense(256, activation="relu", name="shared")(x)
     shared = tf.keras.layers.Dropout(0.15)(shared)
 
-    nic_out = tf.keras.layers.Dense(num_nic, activation="softmax", name="nic_out")(shared)
-    div_out = tf.keras.layers.Dense(num_div, activation="softmax", name="div_out")(shared)
+    nic_out   = tf.keras.layers.Dense(num_nic,   activation="softmax", name="nic_out")(shared)
+    div_out   = tf.keras.layers.Dense(num_div,   activation="softmax", name="div_out")(shared)
+    isic_out  = tf.keras.layers.Dense(num_isic,  activation="softmax", name="isic_out")(shared)
+    naics_out = tf.keras.layers.Dense(num_naics, activation="softmax", name="naics_out")(shared)
 
-    return tf.keras.Model(inputs=inputs, outputs=[nic_out, div_out], name="Udyam_NIC_v2")
+    return tf.keras.Model(
+        inputs=inputs,
+        outputs=[nic_out, div_out, isic_out, naics_out],
+        name="Udyam_MultiCode_v3"
+    )
 
 
 model = build_model(
@@ -212,16 +255,25 @@ model = build_model(
     ff_dim=384,
     num_nic=num_nic,
     num_div=num_div,
+    num_isic=num_isic,
+    num_naics=num_naics,
 )
 
 model.compile(
     optimizer=tf.keras.optimizers.Adam(learning_rate=5e-4),
     loss={
-        "nic_out": tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.05),
-        "div_out": tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.05),
+        "nic_out":   tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.05),
+        "div_out":   tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.05),
+        "isic_out":  tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.05),
+        "naics_out": tf.keras.losses.CategoricalCrossentropy(label_smoothing=0.05),
     },
-    loss_weights={"nic_out": 0.85, "div_out": 0.15},
-    metrics={"nic_out": "accuracy", "div_out": "accuracy"},
+    loss_weights={"nic_out": 0.50, "div_out": 0.10, "isic_out": 0.25, "naics_out": 0.15},
+    metrics={
+        "nic_out": "accuracy",
+        "div_out": "accuracy",
+        "isic_out": "accuracy",
+        "naics_out": "accuracy",
+    },
 )
 
 print(f"\nTotal parameters: {model.count_params():,}")
@@ -244,8 +296,18 @@ callbacks = [
 print("\n--- Training ---")
 history = model.fit(
     X_train_vec,
-    {"nic_out": yn_train, "div_out": yd_train},
-    validation_data=(X_test_vec, {"nic_out": yn_test, "div_out": yd_test}),
+    {
+        "nic_out":   yn_train,
+        "div_out":   yd_train,
+        "isic_out":  yi_train,
+        "naics_out": yna_train,
+    },
+    validation_data=(X_test_vec, {
+        "nic_out":   yn_test,
+        "div_out":   yd_test,
+        "isic_out":  yi_test,
+        "naics_out": yna_test,
+    }),
     epochs=60,
     batch_size=64,
     callbacks=callbacks,
@@ -256,10 +318,20 @@ history = model.fit(
 # =====================================================
 
 results = model.evaluate(
-    X_test_vec, {"nic_out": yn_test, "div_out": yd_test}, verbose=0)
+    X_test_vec,
+    {
+        "nic_out":   yn_test,
+        "div_out":   yd_test,
+        "isic_out":  yi_test,
+        "naics_out": yna_test,
+    },
+    verbose=0
+)
 
-print(f"\nNIC Code Accuracy  : {results[3] * 100:.1f}%")
-print(f"Division Accuracy  : {results[4] * 100:.1f}%")
+print(f"\nNIC Code Accuracy    : {results[5] * 100:.1f}%")
+print(f"Division Accuracy    : {results[6] * 100:.1f}%")
+print(f"ISIC Code Accuracy   : {results[7] * 100:.1f}%")
+print(f"NAICS Code Accuracy  : {results[8] * 100:.1f}%")
 
 # =====================================================
 # 9. SAVE

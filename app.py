@@ -7,7 +7,7 @@ import os
 
 from inference import predict, needs_clarification
 
-app = FastAPI(title="Udyam NIC Predictor API")
+app = FastAPI(title="Udyam Multi-Code Predictor API")
 
 class PredictRequest(BaseModel):
     text: str
