@@ -6,7 +6,7 @@ Key improvements:
   - Division labels normalized to match UDYAM_GUIDANCE keys
   - Larger model (embed_dim=192, 3 transformer layers)
   - Label smoothing for better generalization
-  - Cosine LR scheduler
+  - Cosine LR scheduler 
 """
 
 import pandas as pd
