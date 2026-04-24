@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Udyam Predictor AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="app-container">
+        <!-- HEADER -->
+        <header class="app-header">
+            <div class="header-logo">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                    <path d="M2 17l10 5 10-5"></path>
+                    <path d="M2 12l10 5 10-5"></path>
+                </svg>
+                <div class="header-titles">
+                    <h1>Udyam Predictor</h1>
+                    <p>AI-powered NIC classification for Indian businesses</p>
+                </div>
+            </div>
+        </header>
+
+        <!-- CHAT INTERFACE -->
+        <main class="chat-container" id="chatContainer">
+            <div class="message system-message">
+                <div class="message-content">
+                    <p>Hello! 👋 I'm your AI assistant for business classification. Describe your business, and I'll find the correct NIC code and relevant government schemes for you.</p>
+                </div>
+            </div>
+        </main>
+
+        <!-- INPUT BAR -->
+        <div class="input-area">
+            <form id="chatForm">
+                <div class="input-wrapper">
+                    <input type="text" id="userInput" placeholder="E.g., I grow organic wheat on my farm..." autocomplete="off" required>
+                    <button type="submit" id="sendBtn" title="Send">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="22" y1="2" x2="11" y2="13"></line>
+                            <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                        </svg>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <!-- RESULT CARD TEMPLATE -->
+    <template id="resultCardTemplate">
+        <div class="result-card fade-in">
+            <!-- Header: NIC and Sector -->
+            <div class="result-header">
+                <div class="nic-badge">
+                    <span class="nic-code"></span>
+                </div>
+                <div class="sector-label"></div>
+            </div>
+            
+            <div class="result-body">
+                <h3 class="activity-label"></h3>
+                
+                <!-- Confidence Bar -->
+                <div class="confidence-section">
+                    <div class="confidence-header">
+                        <span class="confidence-text-label">High Confidence</span>
+                        <span class="confidence-text"></span>
+                    </div>
+                    <div class="confidence-bar-bg">
+                        <div class="confidence-bar-fill"></div>
+                    </div>
+                </div>
+
+                <!-- Explanation (AI Feel) -->
+                <div class="explanation-box">
+                    <div class="explanation-header">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="12" y1="16" x2="12" y2="12"></line>
+                            <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                        </svg>
+                        <strong>Model Explanation</strong>
+                    </div>
+                    <p class="explanation-text"></p>
+                    <div class="keywords-list">
+                        <span class="keywords-label">Keywords detected:</span>
+                        <ul class="keywords-ul"></ul>
+                    </div>
+                </div>
+                
+                <!-- Guidance Mini-Cards -->
+                <div class="guidance-grid">
+                    <div class="guidance-card">
+                        <div class="guidance-icon">🏛️</div>
+                        <div class="guidance-content">
+                            <h4>Registration</h4>
+                            <p class="portal-text"></p>
+                            <p class="registration-text"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="guidance-card">
+                        <div class="guidance-icon">📄</div>
+                        <div class="guidance-content">
+                            <h4>Compliance</h4>
+                            <p class="compliance-text"></p>
+                        </div>
+                    </div>
+                    
+                    <div class="guidance-card full-width">
+                        <div class="guidance-icon">💡</div>
+                        <div class="guidance-content">
+                            <h4>Relevant Government Schemes</h4>
+                            <div class="schemes-tags"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+
+    <!-- CLARIFICATION OPTIONS TEMPLATE -->
+    <template id="optionsTemplate">
+        <div class="options-container fade-in">
+            <p class="clarification-question"></p>
+            <div class="buttons-grid">
+                <!-- Buttons will be injected here -->
+            </div>
+        </div>
+    </template>
+
+    <!-- TYPING INDICATOR TEMPLATE -->
+    <template id="typingTemplate">
+        <div class="typing-indicator fade-in" id="typingIndicator">
+            <p>Analyzing your business</p>
+            <div class="dots">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </template>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
