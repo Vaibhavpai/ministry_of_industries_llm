@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,21 @@
     <link rel="stylesheet" href="/static/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="app-container">
         <!-- HEADER -->
         <header class="app-header">
             <div class="header-logo">
-                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
                     <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
                     <path d="M2 17l10 5 10-5"></path>
                     <path d="M2 12l10 5 10-5"></path>
                 </svg>
                 <div class="header-titles">
-                    <h1>Udyam Predictor</h1>
-                    <p>AI-powered NIC · ISIC · NAICS classification for Indian businesses</p>
+                    <h1>Business Code Classifier</h1>
+                    <p>AI-powered NIC · ISIC · NAICS classification for businesses</p>
                 </div>
             </div>
         </header>
@@ -28,7 +31,9 @@
         <main class="chat-container" id="chatContainer">
             <div class="message system-message">
                 <div class="message-content">
-                    <p>Hello! 👋 I'm your AI assistant for business classification. Describe your business, and I'll find the correct <strong>NIC</strong>, <strong>ISIC</strong>, and <strong>NAICS</strong> codes along with relevant government schemes.</p>
+                    <p>Hello! 👋 I'm your AI assistant for business classification. Describe your business, and I'll
+                        find the correct <strong>NIC</strong>, <strong>ISIC</strong>, and <strong>NAICS</strong> codes
+                        along with relevant government schemes.</p>
                 </div>
             </div>
         </main>
@@ -37,9 +42,11 @@
         <div class="input-area">
             <form id="chatForm">
                 <div class="input-wrapper">
-                    <input type="text" id="userInput" placeholder="E.g., I grow organic wheat on my farm..." autocomplete="off" required>
+                    <input type="text" id="userInput" placeholder="E.g., I grow organic wheat on my farm..."
+                        autocomplete="off" required>
                     <button type="submit" id="sendBtn" title="Send">
-                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <svg viewBox="0 0 24 24" width="20" height="20" stroke="currentColor" stroke-width="2.5"
+                            fill="none" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="22" y1="2" x2="11" y2="13"></line>
                             <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                         </svg>
@@ -70,7 +77,7 @@
                 </div>
                 <div class="sector-label"></div>
             </div>
-            
+
             <div class="result-body">
                 <h3 class="activity-label"></h3>
 
@@ -85,7 +92,7 @@
                         <span class="naics-label"></span>
                     </div>
                 </div>
-                
+
                 <!-- Confidence Bar -->
                 <div class="confidence-section">
                     <div class="confidence-header">
@@ -100,7 +107,8 @@
                 <!-- Explanation (AI Feel) -->
                 <div class="explanation-box">
                     <div class="explanation-header">
-                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <circle cx="12" cy="12" r="10"></circle>
                             <line x1="12" y1="16" x2="12" y2="12"></line>
                             <line x1="12" y1="8" x2="12.01" y2="8"></line>
@@ -113,7 +121,7 @@
                         <ul class="keywords-ul"></ul>
                     </div>
                 </div>
-                
+
                 <!-- Guidance Mini-Cards -->
                 <div class="guidance-grid">
                     <div class="guidance-card">
@@ -124,7 +132,7 @@
                             <p class="registration-text"></p>
                         </div>
                     </div>
-                    
+
                     <div class="guidance-card">
                         <div class="guidance-icon">📄</div>
                         <div class="guidance-content">
@@ -132,7 +140,7 @@
                             <p class="compliance-text"></p>
                         </div>
                     </div>
-                    
+
                     <div class="guidance-card full-width">
                         <div class="guidance-icon">💡</div>
                         <div class="guidance-content">
@@ -168,4 +176,5 @@
 
     <script src="/static/script.js"></script>
 </body>
+
 </html>
